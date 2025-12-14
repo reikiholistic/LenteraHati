@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reiki Lentera Hati Indonesia - Kelas Penyembuhan Energi</title>
-  
+   
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Syne:wght@400;500;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Syne:wght@400;500;500;600&display=swap" rel="stylesheet">
 
     <!-- Swiper JS for Sliders -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -80,6 +80,11 @@
         .testimonial-card {
             position: relative;
             overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
         }
         .double-exposure-img {
             position: absolute;
@@ -318,26 +323,124 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
+        <!-- Testimonials Section (UPDATED) -->
         <section class="py-20 px-6 bg-gray-900/50">
             <div class="text-center max-w-3xl mx-auto fade-in">
-                <h2 class="font-heading text-3xl text-white">Apa Kata Mereka?</h2>
+                <h2 class="font-heading text-3xl text-white">Kata Alumni & Praktisi</h2>
+                <p class="mt-2 text-gray-400">Pengalaman nyata dari mereka yang telah merasakan manfaatnya.</p>
             </div>
-            <div class="mt-12 max-w-2xl mx-auto space-y-8">
-                <!-- Testimonial 1 -->
+            
+            <!-- Grid Layout for Testimonials -->
+            <div class="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 (Existing) -->
                 <div class="card-bg p-6 rounded-2xl border-l-4 border-purple-400 fade-in testimonial-card">
-                    <img src="https://www.dropbox.com/scl/fi/3aclo7g6wzipq4nnbw7fi/Unconditional-Love.jpeg?rlkey=hz2c6aqsultf6ti7gcpwq6hkn&st=px4p1etj&raw=1" alt="Double Exposure" class="double-exposure-img">
+                    <img src="https://www.dropbox.com/scl/fi/3aclo7g6wzipq4nnbw7fi/Unconditional-Love.jpeg?rlkey=hz2c6aqsultf6ti7gcpwq6hkn&st=px4p1etj&raw=1" alt="Bg" class="double-exposure-img">
                     <div class="testimonial-content">
-                        <p class="text-lg italic text-gray-200">"Ikut kelas ini adalah keputusan terbaik. Pikiran jadi lebih jernih, tidur lebih nyenyak, dan yang paling penting, saya merasa lebih 'utuh'. Mentornya sangat sabar dan komunitasnya positif banget."</p>
-                        <p class="mt-4 font-bold text-right text-white">- Cholis, Karyawan Swasta</p>
+                        <p class="text-lg italic text-gray-200">"Ikut kelas ini adalah keputusan terbaik. Pikiran jadi lebih jernih, tidur lebih nyenyak, dan saya merasa lebih 'utuh'. Mentornya sabar dan komunitasnya positif."</p>
+                        <div class="mt-6 flex items-center justify-end gap-3">
+                            <div class="text-right">
+                                <p class="font-bold text-white">Cholis</p>
+                                <p class="text-xs text-gray-400">Karyawan Swasta</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
+
+                <!-- Testimonial 2 (Existing) -->
                 <div class="card-bg p-6 rounded-2xl border-l-4 border-pink-300 fade-in testimonial-card">
-                     <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Double Exposure" class="double-exposure-img">
+                     <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=2070&auto=format&fit=crop" alt="Bg" class="double-exposure-img">
                     <div class="testimonial-content">
-                        <p class="text-lg italic text-gray-200">"Sebagai orang yang gampang cemas, materi Ho'oponopono benar-benar mengubah cara pandang saya. Belajar melepaskan beban itu ternyata melegakan. Terima kasih Lentera Hati!"</p>
-                        <p class="mt-4 font-bold text-right text-white">- Putri, Mahasiswa</p>
+                        <p class="text-lg italic text-gray-200">"Sebagai orang yang gampang cemas, materi Ho'oponopono benar-benar mengubah cara pandang saya. Belajar melepaskan beban itu melegakan."</p>
+                        <div class="mt-6 flex items-center justify-end gap-3">
+                            <div class="text-right">
+                                <p class="font-bold text-white">Putri</p>
+                                <p class="text-xs text-gray-400">Mahasiswi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 (New - Practitioner) -->
+                <div class="card-bg p-6 rounded-2xl border-l-4 border-yellow-400 fade-in testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=2664&auto=format&fit=crop" alt="Bg" class="double-exposure-img">
+                   <div class="testimonial-content">
+                       <p class="text-lg italic text-gray-200">"Awalnya saya belajar hanya untuk diri sendiri. Namun setelah mencapai level Master, saya bisa membantu terapi keluarga yang sakit. Ilmu ini sangat aplikatif dan tidak bertentangan dengan keyakinan."</p>
+                       <div class="mt-6 flex items-center justify-end gap-3">
+                           <div class="text-right">
+                               <p class="font-bold text-white">Budi Santoso</p>
+                               <p class="text-xs text-gray-400">Praktisi Reiki Master</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Testimonial 4 (New - Practitioner) -->
+               <div class="card-bg p-6 rounded-2xl border-l-4 border-cyan-400 fade-in testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2662&auto=format&fit=crop" alt="Bg" class="double-exposure-img">
+                   <div class="testimonial-content">
+                       <p class="text-lg italic text-gray-200">"Sensasi energinya nyata. Teknik Kundalini Reiki yang diajarkan sangat powerful untuk meningkatkan stamina kerja saya yang padat. Terima kasih Lentera Hati atas bimbingan gratisnya."</p>
+                       <div class="mt-6 flex items-center justify-end gap-3">
+                           <div class="text-right">
+                               <p class="font-bold text-white">Dr. Sari Wulandari</p>
+                               <p class="text-xs text-gray-400">Alumni Gelombang 15</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section (NEW) -->
+        <section class="py-20 px-6">
+            <div class="text-center max-w-3xl mx-auto fade-in">
+                <h2 class="font-heading text-3xl text-white">Pertanyaan Seputar Pembelajaran</h2>
+                <p class="mt-2 text-gray-400">Hal-hal yang sering ditanyakan oleh calon peserta baru.</p>
+            </div>
+            
+            <div class="mt-12 max-w-2xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="card-bg rounded-xl fade-in">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-5">
+                        <span class="text-lg font-semibold text-white">Apakah Reiki bertentangan dengan agama?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-purple-400 transition-transform duration-500 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-5">
+                        <p class="text-gray-400 pb-5">Tidak. Reiki adalah teknik kesehatan holistik dan seni pengolahan energi alam semesta. Reiki bersifat universal, tidak mengandung dogma, ritual penyembahan, atau mantra yang bertentangan dengan agama manapun. Peserta dari berbagai latar belakang keyakinan dapat mempelajarinya dengan nyaman.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="card-bg rounded-xl fade-in">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-5">
+                        <span class="text-lg font-semibold text-white">Apakah saya harus punya bakat khusus?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-purple-400 transition-transform duration-500 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-5">
+                        <p class="text-gray-400 pb-5">Sama sekali tidak. Kemampuan menyalurkan energi adalah hak lahir setiap manusia. Melalui proses "Attunement" (penyelarasan) yang diberikan oleh Master Teacher, saluran energi Anda akan diaktifkan secara instan, dan Anda bisa langsung mempraktikkannya.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="card-bg rounded-xl fade-in">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-5">
+                        <span class="text-lg font-semibold text-white">Apakah benar-benar gratis?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-purple-400 transition-transform duration-500 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-5">
+                        <p class="text-gray-400 pb-5">Ya, komitmen Lentera Hati Indonesia adalah menyebarkan manfaat Reiki seluas-luasnya. Pembelajaran dari Level Dasar hingga Level Master Teacher (Program Reguler) diberikan tanpa biaya SPP. Kami hanya berharap Anda tekun berlatih dan membantu sesama.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="card-bg rounded-xl fade-in">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-5">
+                        <span class="text-lg font-semibold text-white">Bagaimana metode belajarnya?</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 text-purple-400 transition-transform duration-500 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-5">
+                        <p class="text-gray-400 pb-5">Pembelajaran dilakukan secara Full Online melalui grup WhatsApp/Telegram. Modul diberikan secara bertahap, disertai sesi tanya jawab, bimbingan praktik, dan proses Attunement jarak jauh yang terbukti efektif menembus batas ruang dan waktu.</p>
                     </div>
                 </div>
             </div>
@@ -450,7 +553,7 @@
             });
 
             // Countdown Timer Logic
-            const countDownDate = new Date("November 4, 2025 23:59:59").getTime();
+            const countDownDate = new Date("December 25, 2025 23:59:59").getTime();
 
             const countdownFunction = setInterval(() => {
                 const now = new Date().getTime();
@@ -554,7 +657,6 @@
                     updateIcon();
                 }).catch(error => {
                     // Autoplay was prevented.
-                    // Show muted icon and wait for user interaction.
                     console.log("Autoplay dicegah oleh browser.");
                     updateIcon();
                 });
@@ -573,4 +675,4 @@
     </script>
 
 </body>
-</html>
+                                </html>
