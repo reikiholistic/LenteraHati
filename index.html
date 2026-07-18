@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Kelas Reiki Lentera Hati Indonesia - Gelombang 41</title>
+    <title>Pendaftaran Kelas Reiki Lentera Hati Indonesia - Gelombang 42</title>
     
     <!-- External Dependencies -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -164,7 +164,7 @@
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-400"></span>
                 </span>
-                <span class="text-xs font-bold tracking-[0.15em] uppercase text-teal-300">Gelombang 41 Dibuka</span>
+                <span class="text-xs font-bold tracking-[0.15em] uppercase text-teal-300">Gelombang 42 Dibuka</span>
             </div>
 
             <div class="reveal relative w-full flex flex-col items-center z-30">
@@ -269,7 +269,6 @@
             </div>
         </div>
     </section>
-    <!-- ==================================================== -->
 
     <!-- Keajaiban & Manfaat -->
     <section id="manfaat" class="py-24 relative z-10">
@@ -797,8 +796,8 @@
                             <span class="text-[9px] md:text-xs text-teal-400 uppercase tracking-[0.2em] mt-3 font-bold">Detik</span>
                         </div>
                     </div>
-                    <!-- Animasi batas waktu pendaftaran (Merah berdenyut) -->
-                    <p class="text-center text-sm font-bold text-red-500 mt-8 tracking-[0.2em] animate-pulse drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]">BATAS: 20 JUNI 2026</p>
+                    <!-- Animasi batas waktu pendaftaran (Merah berdenyut) DIUPDATE -->
+                    <p class="text-center text-sm font-bold text-red-500 mt-8 tracking-[0.2em] animate-pulse drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]">BATAS: 18 JULI 2026 - 4 AGUSTUS 2026</p>
                 </div>
             </div>
 
@@ -806,7 +805,7 @@
             <div class="reveal glass-premium p-8 md:p-14 rounded-[3rem] shadow-2xl relative border border-white/5">
                 
                 <div class="text-center mb-12">
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-3">Formulir Gelombang 41</h2>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-3">Formulir Gelombang 42</h2>
                     <p class="text-slate-400 text-sm">Lengkapi data untuk memulai perjalanan Anda.</p>
                 </div>
 
@@ -831,6 +830,21 @@
                         <input type="text" id="domisili" required 
                             class="w-full input-premium rounded-2xl px-5 py-4 text-white text-sm placeholder-white/30" 
                             placeholder="Domisili saat ini">
+                    </div>
+
+                    <!-- TAMBAHAN: Opsi sudah pernah daftar atau belum -->
+                    <div class="relative group">
+                        <label class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-3 ml-2">Sudah pernah daftar Reiki Lentera Hati sebelumnya?</label>
+                        <div class="flex items-center gap-6 bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition">
+                            <label class="flex items-center cursor-pointer group/radio">
+                                <input type="radio" name="pernah_daftar" value="Sudah" required class="w-5 h-5 rounded-full border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-900 cursor-pointer accent-teal-400">
+                                <span class="ml-3 text-sm font-medium text-slate-300 group-hover/radio:text-white transition-colors">Sudah</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer group/radio">
+                                <input type="radio" name="pernah_daftar" value="Belum" required class="w-5 h-5 rounded-full border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-900 cursor-pointer accent-teal-400">
+                                <span class="ml-3 text-sm font-medium text-slate-300 group-hover/radio:text-white transition-colors">Belum</span>
+                            </label>
+                        </div>
                     </div>
 
                     <div class="relative group">
@@ -958,8 +972,8 @@
                 setInterval(() => moveSlide(1), 6000); 
             }
 
-            // 5. Countdown Timer Logic (16 April 2026)
-            const targetDate = new Date("Juni 20, 2026 23:59:59").getTime();
+            // 5. Countdown Timer Logic (UPDATE ke 4 Agustus 2026)
+            const targetDate = new Date("August 4, 2026 23:59:59").getTime();
             const displayContainer = document.getElementById('countdown-display');
             const elDays = document.getElementById("cd-days");
             const elHours = document.getElementById("cd-hours");
@@ -1009,10 +1023,15 @@
                     const nama = document.getElementById('nama').value.trim();
                     const usia = document.getElementById('usia').value.trim();
                     const domisili = document.getElementById('domisili').value.trim();
+                    
+                    // Ambil nilai radio button yang dipilih
+                    const radioPernahDaftar = document.querySelector('input[name="pernah_daftar"]:checked');
+                    const pernahDaftar = radioPernahDaftar ? radioPernahDaftar.value : 'Belum Terisi';
+                    
                     const alasan = document.getElementById('alasan').value.trim();
                     
-                    // Format pesan
-                    const textMessage = `*PENDAFTARAN LHI - GEL 41*%0A%0A🙏 Salam sejahtera Admin,%0ASaya mengajukan pendaftaran dengan data berikut:%0A%0A*Nama:* ${nama}%0A*Usia:* ${usia} Tahun%0A*Domisili:* ${domisili}%0A*Motivasi:* ${alasan}%0A%0A_Saya menyatakan bersedia mematuhi Adab dan Disiplin mutlak pembelajaran di Lentera Hati Indonesia._%0A%0AMohon arahan selanjutnya. Terima kasih.`;
+                    // Format pesan UPDATE (Tambahan Pernah Daftar & Gel 42)
+                    const textMessage = `*PENDAFTARAN LHI - GEL 42*%0A%0A🙏 Salam sejahtera Admin,%0ASaya mengajukan pendaftaran dengan data berikut:%0A%0A*Nama:* ${nama}%0A*Usia:* ${usia} Tahun%0A*Domisili:* ${domisili}%0A*Pernah Daftar LHI:* ${pernahDaftar}%0A*Motivasi:* ${alasan}%0A%0A_Saya menyatakan bersedia mematuhi Adab dan Disiplin mutlak pembelajaran di Lentera Hati Indonesia._%0A%0AMohon arahan selanjutnya. Terima kasih.`;
                     
                     // Buka WhatsApp di tab baru
                     window.open(`https://wa.me/${adminNumber}?text=${textMessage}`, '_blank');
@@ -1022,4 +1041,4 @@
         });
     </script>
 </body>
-</html>
+                    </html>
