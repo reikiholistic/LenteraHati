@@ -1,1044 +1,1420 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Kelas Reiki Lentera Hati Indonesia - Gelombang 43</title>
-    
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                        serif: ['Cinzel', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        body {
-            background-color: #0f172a; /* Slate-900 */
-            color: #f1f5f9;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 15% 50%, rgba(45, 212, 191, 0.04), transparent 25%),
-                radial-gradient(circle at 85% 30%, rgba(94, 234, 212, 0.03), transparent 25%);
-            background-attachment: fixed;
-        }
-        
-        /* High-End Glassmorphism */
-        .glass-premium {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
-        }
-        
-        .glass-nav {
-            background: rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        
-        /* Hover Dynamics */
-        .hover-lift {
-            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
-        }
-        .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -10px rgba(45, 212, 191, 0.15), 0 0 20px rgba(0,0,0,0.4);
-            border-color: rgba(94, 234, 212, 0.3);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
-        }
-        
-        /* Elegant Gradient Text */
-        .text-gradient {
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(135deg, #FFFFFF 0%, #5eead4 100%);
-        }
-        
-        /* Scroll Reveal Animation Classes */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Kelas Reiki Lentera Hati Indonesia — Gelombang 44</title>
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#111a2e',
+                            925: '#0a101f',
+                            950: '#060a14'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --accent-teal: #2dd4bf;
+            --accent-gold: #f59e0b;
+        }
 
-        /* Slider */
-        .slider-container { overflow: hidden; border-radius: 2.5rem; }
-        .slides { display: flex; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .slide { min-width: 100%; height: 500px; position: relative; }
-        .slide img { width: 100%; height: 100%; object-fit: cover; }
-        
-        /* Form Inputs Premium */
-        .input-premium {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: all 0.3s ease;
-            color: #f1f5f9;
-        }
-        .input-premium:focus {
-            background: rgba(255,255,255,0.06);
-            border-color: rgba(45, 212, 191, 0.5);
-            box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.15);
-            outline: none;
-        }
+        body {
+            background-color: #060a14;
+            color: #f1f5f9;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 12% 18%, rgba(45, 212, 191, 0.07), transparent 30%),
+                radial-gradient(circle at 88% 22%, rgba(99, 102, 241, 0.05), transparent 30%),
+                radial-gradient(circle at 50% 80%, rgba(20, 184, 166, 0.05), transparent 35%);
+            background-attachment: fixed;
+        }
+        
+        /* Refined High-End Glassmorphism */
+        .glass-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.45) 0%, rgba(15, 23, 42, 0.65) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.45);
+        }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #2dd4bf; }
-    </style>
+        .glass-subtle {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        
+        .glass-nav {
+            background: rgba(10, 16, 31, 0.78);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        /* Smooth Card Hover Dynamics */
+        .card-interactive {
+            transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), 
+                        box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), 
+                        border-color 0.45s ease;
+        }
+        .card-interactive:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 48px -12px rgba(45, 212, 191, 0.14), 0 0 24px rgba(0, 0, 0, 0.5);
+            border-color: rgba(45, 212, 191, 0.32);
+        }
+        
+        /* Elegant Gradient Typography */
+        .text-gradient-teal {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(135deg, #ffffff 15%, #99f6e4 55%, #2dd4bf 100%);
+        }
+
+        .text-gradient-gold {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(135deg, #fef3c7 0%, #fbbf24 50%, #d97706 100%);
+        }
+        
+        /* Scroll Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Form Inputs Premium */
+        .input-luxury {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: all 0.25s ease;
+            color: #f8fafc;
+        }
+        .input-luxury:hover {
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+        .input-luxury:focus {
+            background: rgba(15, 23, 42, 0.9);
+            border-color: #2dd4bf;
+            box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.14);
+            outline: none;
+        }
+
+        /* Custom Radio Cards */
+        .radio-card input:checked + div {
+            background: rgba(45, 212, 191, 0.12);
+            border-color: rgba(45, 212, 191, 0.6);
+            box-shadow: 0 0 20px rgba(45, 212, 191, 0.12);
+        }
+        .radio-card input:checked + div .radio-dot {
+            border-color: #2dd4bf;
+            background-color: #2dd4bf;
+            box-shadow: inset 0 0 0 3px #0f172a;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #060a14; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 9999px; border: 2px solid #060a14; }
+        ::-webkit-scrollbar-thumb:hover { background: #2dd4bf; }
+    </style>
 </head>
-<body class="antialiased selection:bg-teal-400 selection:text-slate-900 font-sans bg-slate-900 text-slate-100">
+<body class="antialiased selection:bg-teal-400 selection:text-slate-950 font-sans">
 
-    <!-- Floating Navigation -->
-    <nav class="fixed w-full z-50 transition-all duration-500 py-4" id="navbar">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="glass-nav rounded-full px-6 py-3 flex items-center justify-between shadow-2xl transition-all duration-300 border border-transparent" id="nav-container">
-                <div class="flex items-center gap-3 cursor-pointer group" id="scroll-to-top">
-                    <div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors">
-                        <img src="https://www.dropbox.com/scl/fi/2duzawsa67xupr0gpm6z3/Desain-tanpa-judul_20250822_195111_0000.png?rlkey=i3ywyoppf6u0rejgozsounirw&st=1cok6h42&raw=1" alt="Logo LHI" class="w-full h-full object-cover">
-                    </div>
-                    <span class="font-serif font-bold text-base tracking-widest text-white leading-tight">
-                        LENTERA HATI <br><span class="text-[9px] font-sans font-medium text-teal-300 uppercase tracking-[0.25em]">Indonesia</span>
-                    </span>
-                </div>
-                
-                <div class="hidden md:flex items-center space-x-2">
-                    <a href="#manfaat" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase hover:bg-white/5">Manfaat</a>
-                    <a href="#program" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase hover:bg-white/5">Program</a>
-                    <a href="#fasilitas" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase hover:bg-white/5">Fasilitas</a>
-                    <a href="#galeri" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase hover:bg-white/5">Galeri</a>
-                    <a href="#pendaftaran" class="ml-2 bg-slate-100 text-slate-900 hover:bg-teal-50 transition-all px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-[0_0_20px_rgba(255,255,255,0.15)]">Daftar Gratis</a>
-                </div>
+    <!-- Floating Navigation -->
+    <header class="fixed w-full z-50 transition-all duration-300 top-0 pt-4 px-4 sm:px-6" id="navbar">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-nav rounded-2xl md:rounded-full px-5 py-3 flex items-center justify-between shadow-2xl transition-all duration-300" id="nav-container">
+                <!-- Brand Logo -->
+                <button type="button" id="scroll-to-top" class="flex items-center gap-3.5 text-left group focus:outline-none">
+                    <div class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center border border-teal-400/30 bg-slate-900 shadow-[0_0_15px_rgba(45,212,191,0.2)] group-hover:border-teal-400 transition-colors shrink-0">
+                        <img src="https://www.dropbox.com/scl/fi/2duzawsa67xupr0gpm6z3/Desain-tanpa-judul_20250822_195111_0000.png?rlkey=i3ywyoppf6u0rejgozsounirw&st=1cok6h42&raw=1" 
+                             onerror="this.src='https://placehold.co/100x100/0f172a/2dd4bf?text=LHI'" 
+                             alt="Logo LHI" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="block font-serif font-bold text-sm sm:text-base tracking-widest text-white leading-none">
+                            LENTERA HATI
+                        </span>
+                        <span class="block text-[10px] font-sans font-semibold text-teal-400 uppercase tracking-[0.28em] mt-1">
+                            Indonesia
+                        </span>
+                    </div>
+                </button>
+                
+                <!-- Desktop Links -->
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="#kredibilitas" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-white/5">Esensi</a>
+                    <a href="#manfaat" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-white/5">Manfaat</a>
+                    <a href="#program" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-white/5">Kurikulum</a>
+                    <a href="#fasilitas" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-white/5">Fasilitas & Adab</a>
+                    <a href="#galeri" class="text-slate-300 hover:text-white transition-colors px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-white/5">Galeri</a>
+                </nav>
 
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-white p-2" aria-label="Toggle Menu">
-                        <i class="fa-solid fa-bars text-lg"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute w-full px-4 mt-2 z-40">
-            <div class="glass-premium rounded-2xl p-2 space-y-1 border border-white/5">
-                <a href="#manfaat" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5">Manfaat</a>
-                <a href="#program" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5">Program</a>
-                <a href="#fasilitas" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5">Fasilitas</a>
-                <a href="#pendaftaran" class="mobile-link block px-4 py-3 rounded-xl text-sm font-bold bg-slate-100 text-slate-900 text-center mt-2">Daftar Gratis</a>
-            </div>
-        </div>
-    </nav>
+                <!-- Desktop CTA -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#pendaftaran" class="bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-950 hover:from-teal-300 hover:to-emerald-300 transition-all px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-[0_0_25px_rgba(45,212,191,0.3)] flex items-center gap-2">
+                        <span>Daftar Gel. 44</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
 
-    <!-- Hero Section -->
-    <section id="beranda" class="relative min-h-screen flex flex-col justify-center pt-32 pb-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <!-- Background diperterang dengan opacity-60 -->
-            <img src="https://www.dropbox.com/scl/fi/dfcoznksdgnm2wehk27xa/IMG-20250408-WA0006.jpg?rlkey=k4gpc1ofdqdsh6t41vsovj6rw&st=loy56i5a&raw=1" alt="Background Lentera Hati Indonesia" class="w-full h-full object-cover object-center opacity-60">
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/40 to-slate-900"></div>
-        </div>
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 text-slate-200 hover:text-white flex items-center justify-center focus:outline-none" aria-label="Buka Menu">
+                        <i class="fa-solid fa-bars text-base" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden max-w-7xl mx-auto mt-2">
+            <div class="glass-card rounded-2xl p-3 space-y-1 border border-white/10 shadow-2xl">
+                <a href="#kredibilitas" class="mobile-link block px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-teal-300 hover:bg-white/5">Esensi Lentera Hati</a>
+                <a href="#manfaat" class="mobile-link block px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-teal-300 hover:bg-white/5">Manfaat Energi</a>
+                <a href="#program" class="mobile-link block px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-teal-300 hover:bg-white/5">Kurikulum Program</a>
+                <a href="#fasilitas" class="mobile-link block px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-teal-300 hover:bg-white/5">Fasilitas & Syarat Adab</a>
+                <a href="#galeri" class="mobile-link block px-4 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-slate-200 hover:text-teal-300 hover:bg-white/5">Galeri Kegiatan</a>
+                <div class="pt-2">
+                    <a href="#pendaftaran" class="mobile-link block px-4 py-3.5 rounded-xl text-xs font-extrabold uppercase tracking-wider bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-950 text-center shadow-lg">
+                        Daftar Gratis Gelombang 44
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center w-full mt-10">
-            <div class="reveal inline-flex items-center gap-3 px-5 py-2.5 rounded-full glass-premium mb-10 border-teal-400/20 shadow-[0_0_20px_rgba(45,212,191,0.15)]">
-                <span class="relative flex h-2.5 w-2.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-400"></span>
-                </span>
-                <span class="text-xs font-bold tracking-[0.15em] uppercase text-teal-300">Gelombang 43 Dibuka</span>
-            </div>
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-screen flex flex-col justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Background Image & Layered Overlays -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://www.dropbox.com/scl/fi/dfcoznksdgnm2wehk27xa/IMG-20250408-WA0006.jpg?rlkey=k4gpc1ofdqdsh6t41vsovj6rw&st=loy56i5a&raw=1" 
+                 onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1920&auto=format&fit=crop'"
+                 alt="Background Lentera Hati Indonesia" 
+                 class="w-full h-full object-cover object-center opacity-50 scale-105 transition-transform duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/55 to-[#060a14]"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#060a14_90%)] opacity-80"></div>
+        </div>
 
-            <div class="reveal relative w-full flex flex-col items-center z-30">
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] h-[500px] bg-teal-500/15 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center w-full mt-6">
+            <!-- Status Badge -->
+            <div class="reveal inline-flex flex-wrap items-center justify-center gap-2.5 px-5 py-2 rounded-full glass-card mb-8 border-teal-400/30 shadow-[0_0_30px_rgba(45,212,191,0.18)]">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-400"></span>
+                </span>
+                <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-teal-300">Pendaftaran Gelombang 44 Dibuka</span>
+                <span class="hidden sm:inline-block text-white/20">•</span>
+                <span class="text-[11px] font-semibold text-amber-300 tracking-wide">Batas: 27 Oktober 2026</span>
+            </div>
 
-                <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-[1.15] text-white drop-shadow-2xl">
-                    Awakening Your <br/>
-                    <span class="text-gradient">Inner Light</span>
-                </h1>
-                
-                <p class="mt-4 text-sm md:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md">
-                    Evolusi jiwa dan kesadaran kosmik bersama Lentera Hati Indonesia. Pembelajaran Reiki profesional, terstruktur, dan <span class="text-white font-bold">100% Gratis Selamanya</span>.
-                </p>
+            <!-- Main Headline -->
+            <div class="reveal relative w-full flex flex-col items-center">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-[460px] md:h-[460px] bg-teal-500/15 rounded-full blur-[110px] -z-10 pointer-events-none"></div>
 
-                <div class="mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                    <a href="#pendaftaran" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold uppercase tracking-wide rounded-full text-slate-900 bg-slate-100 hover:bg-teal-50 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                        Daftar Sekarang
-                    </a>
-                    <a href="#program" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold uppercase tracking-wide rounded-full text-white glass-premium hover:bg-white/5 transition-all duration-300">
-                        Lihat Kurikulum
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-[1.12] text-white drop-shadow-2xl">
+                    Awakening Your <br/>
+                    <span class="text-gradient-teal">Inner Light</span>
+                </h1>
+                
+                <p class="mt-2 text-sm sm:text-base lg:text-lg text-slate-200 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Evolusi jiwa dan kesadaran kosmik bersama <strong class="text-white font-semibold">Lentera Hati Indonesia</strong>. Pusat pembelajaran Reiki yang terstruktur, bersanad jelas, dan <span class="text-teal-300 font-bold underline decoration-teal-400/40 underline-offset-4">100% Gratis Selamanya</span>.
+                </p>
 
-    <!-- ====== FILOSOFI & KREDIBILITAS (PENGGANTI BROSUR) ====== -->
-    <section id="kredibilitas" class="py-24 relative z-10 bg-slate-900/50 border-y border-white/5 overflow-hidden">
-        <!-- Background Ornaments -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
-        <div class="absolute -left-40 top-20 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                <!-- Action Buttons -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+                    <a href="#pendaftaran" class="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-extrabold uppercase tracking-wider rounded-full text-slate-950 bg-gradient-to-r from-teal-300 via-teal-400 to-emerald-400 hover:from-white hover:to-teal-200 transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.35)] transform hover:-translate-y-0.5">
+                        <span>Daftar Gelombang 44</span>
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </a>
+                    <a href="#program" class="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-bold uppercase tracking-wider rounded-full text-white glass-card hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                        <span>Pelajari Kurikulum</span>
+                        <i class="fa-solid fa-compass text-teal-400 text-xs"></i>
+                    </a>
+                </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <!-- Text Philosophy -->
-                <div class="reveal">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 mb-6 shadow-[0_0_15px_rgba(20,184,166,0.1)]">
-                        <i class="fa-solid fa-seedling text-teal-400 text-xs"></i>
-                        <span class="text-[10px] font-bold tracking-widest uppercase text-teal-300">Esensi Lentera Hati</span>
-                    </div>
-                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                        Bukan Sekadar Komunitas,<br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-teal-500">Ini Adalah Jalan Pengabdian.</span>
-                    </h2>
-                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">
-                        Kami hadir dengan dedikasi penuh untuk membimbing setiap jiwa yang terpanggil. Menghadirkan keilmuan esoterik tingkat tinggi tanpa membebani praktisi dengan biaya, murni sebagai bentuk penyelarasan cinta kasih alam semesta.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-4 text-sm text-slate-300 font-medium">
-                            <div class="w-8 h-8 rounded-full bg-white/5 border border-teal-500/30 flex items-center justify-center text-teal-400 shrink-0 shadow-[0_0_10px_rgba(20,184,166,0.2)]">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            Transmisi energi kosmik dengan sanad yang jelas.
-                        </li>
-                        <li class="flex items-center gap-4 text-sm text-slate-300 font-medium">
-                            <div class="w-8 h-8 rounded-full bg-white/5 border border-teal-500/30 flex items-center justify-center text-teal-400 shrink-0 shadow-[0_0_10px_rgba(20,184,166,0.2)]">
-                                <i class="fa-solid fa-check text-xs"></i>
-                            </div>
-                            Modul pembelajaran terstruktur layaknya akademi.
-                        </li>
-                    </ul>
-                </div>
+                <!-- Quick Highlights Strip -->
+                <div class="mt-14 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 w-full max-w-3xl text-left sm:text-center">
+                    <div class="flex sm:flex-col items-center gap-3 sm:gap-1.5 glass-subtle sm:bg-transparent sm:border-0 p-3.5 sm:p-0 rounded-2xl">
+                        <div class="w-8 h-8 rounded-full bg-teal-400/10 border border-teal-400/30 flex items-center justify-center text-teal-300 text-xs shrink-0">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Murni Pengabdian</p>
+                            <p class="text-[11px] text-slate-400">Tanpa biaya pendaftaran & bulanan</p>
+                        </div>
+                    </div>
+                    <div class="flex sm:flex-col items-center gap-3 sm:gap-1.5 glass-subtle sm:bg-transparent sm:border-0 p-3.5 sm:p-0 rounded-2xl">
+                        <div class="w-8 h-8 rounded-full bg-teal-400/10 border border-teal-400/30 flex items-center justify-center text-teal-300 text-xs shrink-0">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Kurikulum Akademi</p>
+                            <p class="text-[11px] text-slate-400">Dari tingkat dasar hingga Master</p>
+                        </div>
+                    </div>
+                    <div class="flex sm:flex-col items-center gap-3 sm:gap-1.5 glass-subtle sm:bg-transparent sm:border-0 p-3.5 sm:p-0 rounded-2xl">
+                        <div class="w-8 h-8 rounded-full bg-teal-400/10 border border-teal-400/30 flex items-center justify-center text-teal-300 text-xs shrink-0">
+                            <i class="fa-solid fa-users-rays"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Bimbingan Intensif</p>
+                            <p class="text-[11px] text-slate-400">Pendampingan via WhatsApp & Zoom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Stats Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative mt-10 lg:mt-0">
-                    <!-- Decorative glow -->
-                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-500/10 to-indigo-500/10 rounded-[3rem] blur-2xl transform rotate-3 -z-10"></div>
-                    
-                    <!-- Stat 1 -->
-                    <div class="reveal glass-premium p-8 rounded-[2rem] border border-white/10 hover-lift transform md:translate-y-8">
-                        <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-xl mb-6 shadow-[0_0_15px_rgba(45,212,191,0.2)]">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h3 class="text-4xl font-serif font-bold text-white mb-2">5.000+</h3>
-                        <p class="text-[10px] text-teal-400 font-bold tracking-widest uppercase">Praktisi Aktif</p>
-                    </div>
-                    
-                    <!-- Stat 2 -->
-                    <div class="reveal glass-premium p-8 rounded-[2rem] border border-white/10 hover-lift delay-100">
-                        <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl mb-6 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
-                            <i class="fa-solid fa-book-journal-whills"></i>
-                        </div>
-                        <h3 class="text-4xl font-serif font-bold text-white mb-2">23+</h3>
-                        <p class="text-[10px] text-amber-400 font-bold tracking-widest uppercase">Varian Keilmuan</p>
-                    </div>
-                    
-                    <!-- Stat 3 -->
-                    <div class="reveal glass-premium p-8 rounded-[2rem] border border-white/10 hover-lift md:col-span-2 delay-200">
-                        <div class="flex items-center gap-6">
-                            <div class="w-14 h-14 rounded-full bg-gradient-to-r from-teal-400 to-emerald-500 text-slate-900 flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(45,212,191,0.4)] shrink-0">
-                                <i class="fa-solid fa-infinity text-sm"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl md:text-2xl font-serif font-bold text-white mb-1">Dedikasi Seumur Hidup</h3>
-                                <p class="text-[10px] text-slate-400 font-bold tracking-widest uppercase">100% Bebas Biaya Komersial</p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Filosofi & Kredibilitas -->
+    <section id="kredibilitas" class="py-24 relative z-10 bg-slate-925/80 border-y border-white/5 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[1px] bg-gradient-to-r from-transparent via-teal-400/40 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Philosophy Narrative -->
+                <div class="reveal lg:col-span-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-6">
+                        <i class="fa-solid fa-seedling text-teal-400 text-xs"></i>
+                        <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Esensi Lentera Hati</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-[1.2]">
+                        Bukan Sekadar Komunitas,<br>
+                        <span class="text-gradient-teal">Ini Adalah Jalan Pengabdian.</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                        Kami hadir dengan dedikasi penuh untuk membimbing setiap jiwa yang terpanggil. Menghadirkan keilmuan esoterik tingkat tinggi tanpa membebani praktisi dengan biaya komersial, murni sebagai bentuk penyelarasan cinta kasih alam semesta.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl glass-subtle border border-white/5">
+                            <div class="w-9 h-9 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-300 shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Sanad & Transmisi Energi Jelas</h4>
+                                <p class="text-xs text-slate-400 leading-relaxed">Penyelarasan (attunement) diberikan secara sah dan terukur oleh para Master Teacher berpengalaman.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-2xl glass-subtle border border-white/5">
+                            <div class="w-9 h-9 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-300 shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white mb-1">Kurikulum Terstruktur Layaknya Akademi</h4>
+                                <p class="text-xs text-slate-400 leading-relaxed">Materi disusun sistematis, mudah dipahami pemula, dan dipantau perkembangannya setiap hari.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+                <!-- Right Column: Balanced Stats Bento Grid -->
+                <div class="reveal lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-teal-500/10 to-indigo-500/10 rounded-3xl blur-3xl -z-10"></div>
+                    
+                    <!-- Stat Card 1 -->
+                    <div class="glass-card p-8 rounded-3xl card-interactive flex flex-col justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-teal-500/15 border border-teal-400/20 text-teal-300 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-serif font-bold text-white mb-1">5.000+</h3>
+                            <p class="text-xs text-teal-300 font-bold tracking-widest uppercase">Praktisi Aktif</p>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Tersebar di berbagai wilayah Nusantara dan mancanegara.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 2 -->
+                    <div class="glass-card p-8 rounded-3xl card-interactive flex flex-col justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-400/20 text-amber-300 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-book-journal-whills"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-serif font-bold text-white mb-1">23+</h3>
+                            <p class="text-xs text-amber-300 font-bold tracking-widest uppercase">Varian Keilmuan</p>
+                            <p class="text-xs text-slate-400 mt-2 leading-relaxed">Tradisi penyembuhan energi murni yang diajarkan bertahap.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 3 (Full Span) -->
+                    <div class="glass-card p-8 rounded-3xl card-interactive sm:col-span-2 bg-gradient-to-r from-slate-900/90 via-teal-950/30 to-slate-900/90 border-teal-500/25">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-5">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-400 to-emerald-500 text-slate-950 flex items-center justify-center text-xl font-bold shadow-[0_0_25px_rgba(45,212,191,0.35)] shrink-0">
+                                <i class="fa-solid fa-infinity"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center gap-2 mb-1">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-teal-400/15 text-teal-300 border border-teal-400/30">Gelombang 44</span>
+                                </div>
+                                <h3 class="text-xl sm:text-2xl font-serif font-bold text-white">Dedikasi Seumur Hidup</h3>
+                                <p class="text-xs text-slate-300 mt-1">100% Bebas Biaya Komersial • Persaudaraan Spiritual Sepanjang Masa</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Keajaiban & Manfaat -->
-    <section id="manfaat" class="py-24 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-                <div class="max-w-3xl">
-                    <p class="text-teal-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Transformasi Diri</p>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Keajaiban & Manfaat <br>Energi Kosmik</h2>
-                    <p class="text-slate-300 text-base md:text-lg leading-relaxed">
-                        Reiki bukan sekadar metode penyembuhan. Ini adalah seni mengelola energi kehidupan universal untuk menyelaraskan harmoni antara tubuh fisik, pikiran, dan kedalaman jiwa Anda.
-                    </p>
-                </div>
-            </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] hover-lift group relative overflow-hidden">
-                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-teal-400/15 rounded-full blur-3xl transition-all duration-700 group-hover:bg-teal-400/25"></div>
-                    <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 text-teal-300 text-2xl group-hover:scale-110 transition-transform duration-500">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Penyembuhan Fisik</h3>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                        Mempercepat regenerasi sel, membuang racun tubuh secara alami, dan meningkatkan imunitas untuk mencapai tingkat vitalitas yang prima.
-                    </p>
-                </div>
-                <!-- Card 2 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] hover-lift group relative overflow-hidden delay-100" style="transition-delay: 100ms;">
-                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-indigo-400/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-indigo-400/20"></div>
-                    <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 text-teal-300 text-2xl group-hover:scale-110 transition-transform duration-500">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Ketenangan Mental</h3>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                        Efektif melepaskan trauma masa lalu, meredakan tingkat stres dan kecemasan, membawa stabilitas emosi yang sangat mendalam.
-                    </p>
-                </div>
-                <!-- Card 3 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] hover-lift group relative overflow-hidden delay-200" style="transition-delay: 200ms;">
-                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-purple-400/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-purple-400/20"></div>
-                    <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 text-teal-300 text-2xl group-hover:scale-110 transition-transform duration-500">
-                        <i class="fa-solid fa-om"></i>
-                    </div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Evolusi Spiritual</h3>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                        Membersihkan sistem Cakra, mempertajam intuisi batin, dan menghubungkan kesadaran mikrokosmos dengan makrokosmos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Keajaiban & Manfaat -->
+    <section id="manfaat" class="py-24 sm:py-28 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-4">
+                    <i class="fa-solid fa-wand-magic-sparkles text-teal-400 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Transformasi Holistik</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-5 leading-tight">
+                    Keajaiban & Manfaat Energi Kosmik
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Reiki bukan sekadar metode penyembuhan alternatif. Ini adalah seni mengelola energi kehidupan universal untuk menyelaraskan harmoni antara tubuh fisik, kejernihan pikiran, dan kedalaman jiwa Anda.
+                </p>
+            </div>
 
-    <!-- Program Section -->
-    <section id="program" class="py-32 relative bg-slate-800/20 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="reveal text-center mb-20">
-                <p class="text-teal-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Kurikulum Terstruktur</p>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Program Pembelajaran</h2>
-                <p class="text-slate-300 max-w-2xl mx-auto text-base">
-                    Akses eksklusif ke berbagai varian keilmuan esoterik, dibimbing tahap demi tahap secara profesional dari level dasar hingga Master Teacher.
-                </p>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <!-- Card 1 -->
+                <div class="reveal glass-card p-8 sm:p-10 rounded-3xl card-interactive group relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-36 h-36 bg-teal-400/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-teal-400/25"></div>
+                    <div class="w-14 h-14 rounded-2xl bg-teal-400/10 border border-teal-400/25 flex items-center justify-center mb-7 text-teal-300 text-2xl group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-teal-400 block mb-2">Aspek Raga</span>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Penyembuhan Fisik</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        Mempercepat regenerasi sel tubuh, membantu detoksifikasi alami, meningkatkan kualitas tidur, serta menjaga imunitas dan vitalitas harian secara optimal.
+                    </p>
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Program Items -->
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1528319725582-ddc096101511?q=80&w=800&auto=format&fit=crop" alt="Usui Reiki" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Utama</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-solid fa-hands text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Usui Traditional Reiki</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Level 1 — Master Teacher</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Fondasi utama penyembuhan energi alami peninggalan Mikao Usui untuk menyeimbangkan energi tubuh secara menyeluruh.</p>
-                    </div>
-                </div>
+                <!-- Card 2 -->
+                <div class="reveal glass-card p-8 sm:p-10 rounded-3xl card-interactive group relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-36 h-36 bg-indigo-400/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-indigo-400/25"></div>
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-400/10 border border-indigo-400/25 flex items-center justify-center mb-7 text-indigo-300 text-2xl group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-indigo-300 block mb-2">Aspek Pikiran & Rasa</span>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Ketenangan Mental</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        Efektif mengurai luka batin dan trauma masa lalu, meredakan stres serta kecemasan berlebih, sekaligus menghadirkan kedamaian batin yang stabil.
+                    </p>
+                </div>
 
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden" style="transition-delay: 100ms;">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&auto=format&fit=crop" alt="Shamballa MDH" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Lanjutan</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-solid fa-atom text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Shamballa MDH</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Multidimensional</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Akses ke energi penyembuhan multi-dimensi tingkat tinggi dan proses aktivasi DNA spiritual kesadaran manusia.</p>
-                    </div>
-                </div>
+                <!-- Card 3 -->
+                <div class="reveal glass-card p-8 sm:p-10 rounded-3xl card-interactive group relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-36 h-36 bg-amber-400/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-amber-400/25"></div>
+                    <div class="w-14 h-14 rounded-2xl bg-amber-400/10 border border-amber-400/25 flex items-center justify-center mb-7 text-amber-300 text-2xl group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-om"></i>
+                    </div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-amber-300 block mb-2">Aspek Ruhani</span>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Evolusi Spiritual</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        Membersihkan dan menyeimbangkan 7 Cakra utama, mempertajam intuisi batin, serta menyelaraskan kesadaran diri dengan harmoni semesta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden" style="transition-delay: 200ms;">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://www.dropbox.com/scl/fi/lway565upltba4clh5m8h/35ee645b2076230b9da1003545f80782.jpg?rlkey=eq6bjvgfx159qd83i9cvox596&st=qjwlt6jq&raw=1" alt="Kundalini Reiki" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Lanjutan</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-solid fa-fire-flame-curved text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Kundalini Reiki</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Awakening Process</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Metode membangkitkan api suci Kundalini secara aman, berfokus pada percepatan evolusi dan pembersihan karma.</p>
-                    </div>
-                </div>
-                
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Ho'oponopono" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Pemurnian</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-solid fa-droplet text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Ho'oponopono</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Hawaiian Healing</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Teknik kuno Hawaii untuk rekonsiliasi, pemaafan total, dan pelepasan memori negatif yang membelenggu jiwa.</p>
-                    </div>
-                </div>
+    <!-- Program Section -->
+    <section id="program" class="py-24 sm:py-28 relative bg-slate-925/70 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="reveal text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-4">
+                    <i class="fa-solid fa-layer-group text-teal-400 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Kurikulum Terstruktur</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-5">Program Pembelajaran</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Akses eksklusif ke berbagai varian keilmuan energi esoterik yang dibimbing secara bertahap dan terukur, mulai dari fondasi dasar hingga tingkat <strong class="text-white">Master Teacher</strong>.
+                </p>
+            </div>
 
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden" style="transition-delay: 100ms;">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://www.dropbox.com/scl/fi/ujfy3twb2nnbirdrxirtq/58507eeb1e7108b94b7cc00681517dfb.jpg?rlkey=xrooz7cneess27tl94k2matfb&st=vtva3036&raw=1" alt="White Lotus" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Spesial</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-brands fa-pagelines text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Reiki White Lotus</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Purification Energy</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Energi teratai putih lambang kemurnian kosmik yang lembut, dikhususkan untuk pembersihan aura tingkat tinggi.</p>
-                    </div>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Program 1: Usui Reiki -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528319725582-ddc096101511?q=80&w=800&auto=format&fit=crop" alt="Usui Traditional Reiki" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-extrabold px-3.5 py-1 rounded-full bg-teal-500/90 text-slate-950 shadow-lg">Fondasi Utama</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-13 h-13 w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-solid fa-hands text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Level 1 — Master Teacher</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Usui Traditional Reiki</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Fondasi utama penyembuhan energi alami warisan Mikao Usui untuk menyelaraskan tubuh fisik, eterik, dan cakra secara menyeluruh.</p>
+                    </div>
+                </div>
 
-                <div class="reveal glass-premium rounded-[2rem] hover-lift group flex flex-col overflow-hidden" style="transition-delay: 200ms;">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://www.dropbox.com/scl/fi/zrizu6ki0u82vymdz8nac/5ecf6f221938998facf4cf84c122836b.jpg?rlkey=t1tp5x6u88qs4nfit5c4pab5q&st=0vh6nfs7&raw=1" alt="Program Lainnya" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000 ease-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                        <span class="absolute top-5 right-5 text-[9px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md text-white border border-white/20">Spesial</span>
-                    </div>
-                    <div class="p-8 pt-2 relative flex-grow flex flex-col bg-slate-900/60">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-800 flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition-colors -mt-10 mb-6 relative z-10 shadow-xl">
-                            <i class="fa-solid fa-star text-xl text-white group-hover:text-teal-400 transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 font-serif tracking-wide">Program Lainnya</h3>
-                        <p class="text-[10px] text-teal-300 mb-4 font-bold tracking-[0.15em] uppercase">Esoteric Wisdom</p>
-                        <p class="text-sm text-slate-300 leading-relaxed">Berbagai keilmuan esoterik tambahan dan kebijaksanaan spiritual yang disesuaikan dengan perkembangan praktisi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <!-- Program 2: Shamballa MDH -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&auto=format&fit=crop" alt="Shamballa MDH" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-teal-300 border border-teal-400/30">Tingkat Lanjut</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-solid fa-atom text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Multidimensional Healing</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Shamballa MDH</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Akses ke frekuensi penyembuhan multi-dimensi tingkat tinggi serta aktivasi kesadaran spiritual yang lebih luas.</p>
+                    </div>
+                </div>
 
-    <!-- Metode & Nilai Investasi (TAMBAHAN BARU) -->
-    <section class="py-20 relative z-10 bg-slate-800/40 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-                
-                <!-- Card Metode Pembelajaran -->
-                <div class="reveal glass-premium p-8 md:p-10 rounded-[2.5rem] border border-white/10 hover-lift relative overflow-hidden">
-                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
-                        <i class="fa-solid fa-laptop-house text-blue-400 text-xs"></i>
-                        <span class="text-[10px] font-bold tracking-widest uppercase text-blue-300">Metode Belajar</span>
-                    </div>
-                    <h3 class="font-serif text-3xl font-bold text-white mb-6">Fleksibel & Terpadu</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-8">
-                        Seluruh proses transmisi keilmuan didesain agar mudah diakses dari mana saja tanpa mengurangi esensi spiritualnya, menyesuaikan dengan kesibukan Anda.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                            <div class="w-10 h-10 rounded-xl bg-[#25D366]/20 flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fa-brands fa-whatsapp text-[#25D366] text-lg"></i>
-                            </div>
-                            <p class="text-sm text-slate-200"><span class="font-bold text-white">WhatsApp Group</span> untuk materi dan diskusi harian.</p>
-                        </div>
-                        <div class="flex items-center bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                            <div class="w-10 h-10 rounded-xl bg-[#2D8CFF]/20 flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fa-solid fa-video text-[#2D8CFF] text-lg"></i>
-                            </div>
-                            <p class="text-sm text-slate-200"><span class="font-bold text-white">Zoom Meeting</span> untuk tatap muka dan penembangan mendalam.</p>
-                        </div>
-                        <div class="flex items-center bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fa-solid fa-calendar-day text-amber-400 text-lg"></i>
-                            </div>
-                            <p class="text-sm text-slate-200"><span class="font-bold text-white">Aktif Setiap Hari</span> dengan bimbingan dari para Master Ahli.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Program 3: Kundalini Reiki -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://www.dropbox.com/scl/fi/lway565upltba4clh5m8h/35ee645b2076230b9da1003545f80782.jpg?rlkey=eq6bjvgfx159qd83i9cvox596&st=qjwlt6jq&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=800&auto=format&fit=crop'"
+                             alt="Kundalini Reiki" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-teal-300 border border-teal-400/30">Tingkat Lanjut</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-solid fa-fire-flame-curved text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Awakening Process</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Kundalini Reiki</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Metode membangkitkan energi Kundalini secara aman dan terkendali untuk pembersihan jalur sushumna dan evolusi batin.</p>
+                    </div>
+                </div>
+                
+                <!-- Program 4: Ho'oponopono -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Ho'oponopono" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-300 border border-amber-400/30">Pemurnian Jiwa</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-solid fa-droplet text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Hawaiian Healing</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Ho'oponopono</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Seni kuno Hawaii untuk rekonsiliasi batin, pengampunan total, dan pelepasan memori bawah sadar yang menghambat hidup.</p>
+                    </div>
+                </div>
 
-                <!-- Card Perbandingan Biaya (Desain Premium) -->
-                <div class="reveal glass-premium p-8 md:p-10 rounded-[2.5rem] border border-white/10 bg-slate-900/40 hover-lift relative overflow-hidden delay-100 shadow-2xl">
-                    <!-- Spotlight Effect -->
-                    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-amber-500/10 via-teal-500/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+                <!-- Program 5: Reiki White Lotus -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://www.dropbox.com/scl/fi/ujfy3twb2nnbirdrxirtq/58507eeb1e7108b94b7cc00681517dfb.jpg?rlkey=xrooz7cneess27tl94k2matfb&st=vtva3036&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=800&auto=format&fit=crop'"
+                             alt="White Lotus" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-300 border border-amber-400/30">Program Spesial</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-brands fa-pagelines text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Purification Energy</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Reiki White Lotus</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Vibrasi teratai putih lambang kemurnian kosmik yang lembut, dikhususkan untuk pembersihan selubung aura tingkat tinggi.</p>
+                    </div>
+                </div>
 
-                    <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500/10 to-transparent border border-amber-500/20 mb-8 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
-                        <i class="fa-solid fa-gem text-amber-400 text-xs"></i>
-                        <span class="text-[10px] font-bold tracking-widest uppercase text-amber-300">Nilai Investasi</span>
-                    </div>
-                    
-                    <h3 class="font-serif text-3xl font-bold text-white mb-4">Tanpa Biaya Tersembunyi</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-10">
-                        Lentera Hati Indonesia berkomitmen menyebarkan cinta kasih semesta demi kebaikan umat, <span class="text-white font-medium">murni pengabdian tanpa komersialisasi.</span>
-                    </p>
-                    
-                    <div class="space-y-6 relative">
-                        <!-- Connecting line visual (Desktop) -->
-                        <div class="hidden md:block absolute left-8 top-1/2 -bottom-10 w-[1px] bg-gradient-to-b from-slate-700 to-teal-500/50 z-0"></div>
+                <!-- Program 6: Program Lainnya -->
+                <div class="reveal glass-card rounded-3xl card-interactive group flex flex-col overflow-hidden">
+                    <div class="h-52 relative overflow-hidden">
+                        <img src="https://www.dropbox.com/scl/fi/zrizu6ki0u82vymdz8nac/5ecf6f221938998facf4cf84c122836b.jpg?rlkey=t1tp5x6u88qs4nfit5c4pab5q&st=0vh6nfs7&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop'"
+                             alt="Program Lainnya" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold px-3.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-300 border border-amber-400/30">23+ Varian</span>
+                    </div>
+                    <div class="p-7 pt-0 relative flex-grow flex flex-col">
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center border border-teal-400/30 text-teal-300 -mt-6 mb-5 relative z-10 shadow-xl">
+                            <i class="fa-solid fa-star text-lg"></i>
+                        </div>
+                        <p class="text-[10px] text-teal-400 mb-1.5 font-bold tracking-[0.18em] uppercase">Esoteric Wisdom</p>
+                        <h3 class="text-xl font-bold text-white mb-3 font-serif">Varian Esoterik Lainnya</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed flex-grow">Puluhan tradisi keilmuan energi lanjutan yang dibuka secara bertahap seiring kedisiplinan dan kematangan batin praktisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Harga Luar -->
-                        <div class="relative p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 backdrop-blur-sm z-10 overflow-hidden group">
-                            <div class="absolute inset-0 bg-gradient-to-r from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            <div class="flex justify-between items-center mb-3">
-                                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest flex items-center gap-2">
-                                    <i class="fa-solid fa-building-columns text-slate-500"></i> Standar Biaya Luar
-                                </p>
-                            </div>
-                            <div class="relative inline-block">
-                                <p class="text-xl md:text-2xl font-bold text-slate-500">Rp 2.000.000 - 10.000.000</p>
-                                <div class="absolute top-1/2 left-[-5%] w-[110%] h-[2px] bg-red-500/70 transform -translate-y-1/2 rotate-[-2deg] shadow-[0_0_10px_rgba(239,68,68,0.5)]"></div>
-                            </div>
-                            <p class="text-[9px] text-slate-500 mt-2 uppercase tracking-widest italic">*Estimasi untuk 1 varian keilmuan</p>
-                        </div>
-                        
-                        <!-- Harga LHI (Premium VIP Card) -->
-                        <div class="relative p-8 rounded-3xl bg-slate-900 border border-teal-500/40 shadow-[0_20px_50px_rgba(20,184,166,0.2)] transform md:scale-105 z-20 overflow-hidden group transition-all duration-500 hover:shadow-[0_20px_60px_rgba(20,184,166,0.3)] hover:border-teal-400/60">
-                            <!-- Premium Background Elements -->
-                            <div class="absolute inset-0 bg-gradient-to-br from-teal-900/40 via-slate-900 to-slate-900"></div>
-                            <!-- Subtle dot pattern -->
-                            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
-                            <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl group-hover:bg-teal-500/20 transition-colors duration-700"></div>
-                            
-                            <!-- VIP Badge -->
-                            <div class="absolute top-0 right-0 bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-500 text-slate-900 text-[10px] font-extrabold px-6 py-2 rounded-bl-3xl uppercase tracking-[0.2em] shadow-[0_5px_15px_rgba(251,191,36,0.3)]">
-                                Privilese LHI
-                            </div>
-                            
-                            <div class="relative z-10">
-                                <p class="text-xs text-teal-400 font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
-                                    <i class="fa-solid fa-sparkles"></i> Bersama Lentera Hati
-                                </p>
-                                
-                                <div class="flex flex-col mb-8">
-                                    <p class="text-5xl md:text-6xl font-serif font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-200 to-teal-400 drop-shadow-[0_0_20px_rgba(45,212,191,0.3)] pb-2">
-                                        100% GRATIS
-                                    </p>
-                                </div>
-                                
-                                <div class="space-y-4 pt-6 border-t border-white/10">
-                                    <div class="flex items-center gap-4 group/item">
-                                        <div class="w-6 h-6 rounded-full bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center shadow-[0_0_10px_rgba(45,212,191,0.4)] group-hover/item:scale-110 transition-transform">
-                                            <i class="fa-solid fa-check text-slate-900 text-[10px] font-bold"></i>
-                                        </div>
-                                        <p class="text-sm text-slate-200 font-medium tracking-wide">Akses ke <span class="text-white font-bold">Semua Varian</span> Program</p>
-                                    </div>
-                                    <div class="flex items-center gap-4 group/item">
-                                        <div class="w-6 h-6 rounded-full bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center shadow-[0_0_10px_rgba(45,212,191,0.4)] group-hover/item:scale-110 transition-transform">
-                                            <i class="fa-solid fa-check text-slate-900 text-[10px] font-bold"></i>
-                                        </div>
-                                        <p class="text-sm text-slate-200 font-medium tracking-wide">Penyelarasan & Inisiasi <span class="text-white font-bold">Penuh</span></p>
-                                    </div>
-                                    <div class="flex items-center gap-4 group/item">
-                                        <div class="w-6 h-6 rounded-full bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center shadow-[0_0_10px_rgba(45,212,191,0.4)] group-hover/item:scale-110 transition-transform">
-                                            <i class="fa-solid fa-check text-slate-900 text-[10px] font-bold"></i>
-                                        </div>
-                                        <p class="text-sm text-slate-200 font-medium tracking-wide">Bimbingan Eksklusif <span class="text-white font-bold">Seumur Hidup</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Metode Belajar & Nilai Investasi -->
+    <section class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Card Metode Pembelajaran -->
+                <div class="reveal glass-card p-8 sm:p-11 rounded-3xl card-interactive flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+                            <i class="fa-solid fa-laptop-file text-blue-400 text-xs"></i>
+                            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-blue-300">Sistem Pembelajaran</span>
+                        </div>
+                        <h3 class="font-serif text-3xl font-bold text-white mb-4">Fleksibel, Daring & Terpadu</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                            Seluruh proses transmisi keilmuan didesain agar mudah diakses dari mana saja tanpa mengurangi kesakralan dan esensi spiritualnya, tetap selaras dengan aktivitas harian Anda.
+                        </p>
+                    </div>
 
-            </div>
-        </div>
-    </section>
+                    <div class="space-y-4">
+                        <div class="flex items-center bg-slate-900/70 p-4 rounded-2xl border border-white/5 hover:border-white/15 transition">
+                            <div class="w-11 h-11 rounded-xl bg-[#25D366]/15 border border-[#25D366]/30 flex items-center justify-center mr-4 shrink-0">
+                                <i class="fa-brands fa-whatsapp text-[#25D366] text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">WhatsApp Group Terstruktur</h4>
+                                <p class="text-xs text-slate-400">Penyampaian modul harian, laporan latihan, dan diskusi interaktif.</p>
+                            </div>
+                        </div>
 
-    <!-- Fasilitas & Syarat -->
-    <section id="fasilitas" class="py-32 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-                
-                <div class="reveal order-2 lg:order-1 relative">
-                    <div class="glass-premium p-10 md:p-14 rounded-[3rem] relative overflow-hidden border border-white/10">
-                        <div class="absolute -right-10 -bottom-10 opacity-[0.03]">
-                            <i class="fa-solid fa-scale-balanced text-[15rem]"></i>
-                        </div>
-                        
-                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 mb-8">
-                            <i class="fa-solid fa-circle-exclamation text-amber-400 text-xs"></i>
-                            <span class="text-[10px] font-bold tracking-widest uppercase text-amber-300">Perhatian Khusus</span>
-                        </div>
+                        <div class="flex items-center bg-slate-900/70 p-4 rounded-2xl border border-white/5 hover:border-white/15 transition">
+                            <div class="w-11 h-11 rounded-xl bg-[#2D8CFF]/15 border border-[#2D8CFF]/30 flex items-center justify-center mr-4 shrink-0">
+                                <i class="fa-solid fa-video text-[#2D8CFF] text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Sesi Zoom Tatap Muka</h4>
+                                <p class="text-xs text-slate-400">Meditasi bersama, penyelarasan (attunement), dan pendalaman materi.</p>
+                            </div>
+                        </div>
 
-                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Syarat Mutlak Pembelajaran</h2>
-                        <p class="text-slate-300 mb-10 text-sm leading-relaxed">
-                            Meskipun program ini sepenuhnya gratis, kami menerapkan seleksi kedisiplinan yang amat ketat demi menjaga kehormatan dan kesucian keilmuan.
-                        </p>
-                        
-                        <div class="space-y-4">
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                                <h4 class="text-white font-bold mb-2 text-sm flex items-center">
-                                    <i class="fa-solid fa-praying-hands text-teal-400 mr-3 text-lg"></i> Menjaga Adab Etika
-                                </h4>
-                                <p class="text-slate-300 text-xs leading-relaxed pl-8">Menjunjung tinggi kesopanan, saling menghargai, dan menghormati Master pengajar di setiap interaksi grup maupun sesi langsung.</p>
-                            </div>
-                            <div class="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                                <h4 class="text-white font-bold mb-2 text-sm flex items-center">
-                                    <i class="fa-solid fa-person-running text-teal-400 mr-3 text-lg"></i> Disiplin & Tanggung Jawab
-                                </h4>
-                                <p class="text-slate-300 text-xs leading-relaxed pl-8">Wajib mengikuti instruksi harian, melaporkan tugas praktek tepat waktu, dan berkomitmen utuh atas perkembangan spiritual diri.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <div class="flex items-center bg-slate-900/70 p-4 rounded-2xl border border-white/5 hover:border-white/15 transition">
+                            <div class="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mr-4 shrink-0">
+                                <i class="fa-solid fa-user-check text-amber-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Pendampingan Harian</h4>
+                                <p class="text-xs text-slate-400">Dibimbing langsung oleh para Master Ahli yang siap menjawab kendala praktik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="reveal order-1 lg:order-2 lg:pl-10">
-                    <p class="text-teal-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Benefit Eksklusif</p>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
-                        Fasilitas Penuh <br>Praktisi LHI
-                    </h2>
-                    
-                    <div class="space-y-10">
-                        <div class="flex items-start group">
-                            <div class="w-14 h-14 rounded-[1rem] glass-premium flex items-center justify-center border-white/10 mr-6 group-hover:border-teal-400/50 transition flex-shrink-0 shadow-lg">
-                                <i class="fa-solid fa-infinity text-teal-400 text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white mb-2">Bimbingan Seumur Hidup</h4>
-                                <p class="text-slate-300 text-sm leading-relaxed">Akses pendampingan tanpa batas waktu melalui grup WhatsApp komunitas dan pertemuan Zoom rutin.</p>
-                            </div>
-                        </div>
+                <!-- Card Perbandingan Biaya -->
+                <div class="reveal glass-card p-8 sm:p-11 rounded-3xl card-interactive flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-amber-500/10 via-teal-500/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 
-                        <div class="flex items-start group">
-                            <div class="w-14 h-14 rounded-[1rem] glass-premium flex items-center justify-center border-white/10 mr-6 group-hover:border-teal-400/50 transition flex-shrink-0 shadow-lg">
-                                <i class="fa-solid fa-water text-teal-400 text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white mb-2">Sesi Pemurnian Rutin</h4>
-                                <p class="text-slate-300 text-sm leading-relaxed">Program pembersihan aura dan energi negatif berkala yang dipandu langsung oleh Master.</p>
-                            </div>
-                        </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 mb-6">
+                            <i class="fa-solid fa-gem text-amber-400 text-xs"></i>
+                            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-300">Nilai Investasi</span>
+                        </div>
+                        <h3 class="font-serif text-3xl font-bold text-white mb-4">Tanpa Biaya Tersembunyi</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                            Lentera Hati Indonesia berkomitmen menyebarkan cinta kasih semesta demi kebaikan bersama, <span class="text-white font-semibold">murni pengabdian tanpa komersialisasi mahar.</span>
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <!-- Standar Luar -->
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest flex items-center gap-2">
+                                    <i class="fa-solid fa-building-columns text-slate-500"></i> Standar Pelatihan Komersial
+                                </p>
+                                <p class="text-[11px] text-slate-500 mt-0.5">Estimasi biaya di luar untuk 1 varian keilmuan</p>
+                            </div>
+                            <div class="relative inline-block self-start sm:self-center">
+                                <span class="text-base sm:text-lg font-bold text-slate-400 line-through decoration-red-500/80 decoration-2">Rp 2 Jt – 10 Jt</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Privilese LHI -->
+                        <div class="relative p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-teal-950/60 via-slate-900 to-slate-900 border border-teal-400/40 shadow-[0_15px_40px_rgba(20,184,166,0.18)] overflow-hidden">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                                <span class="text-xs text-teal-300 font-bold uppercase tracking-widest flex items-center gap-2">
+                                    <i class="fa-solid fa-certificate text-teal-400"></i> Privilese Praktisi LHI
+                                </span>
+                                <span class="bg-gradient-to-r from-amber-300 to-amber-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest">
+                                    Bebas Mahar
+                                </span>
+                            </div>
+                            
+                            <p class="text-4xl sm:text-5xl font-serif font-extrabold text-gradient-teal mb-6">
+                                100% GRATIS
+                            </p>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-white/10 text-xs text-slate-200">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-teal-400"></i>
+                                    <span>Semua Varian</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-teal-400"></i>
+                                    <span>Inisiasi Penuh</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-teal-400"></i>
+                                    <span>Seumur Hidup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-start group">
-                            <div class="w-14 h-14 rounded-[1rem] glass-premium flex items-center justify-center border-white/10 mr-6 group-hover:border-teal-400/50 transition flex-shrink-0 shadow-lg">
-                                <i class="fa-solid fa-graduation-cap text-teal-400 text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold text-white mb-2">Jalur Master Teacher</h4>
-                                <p class="text-slate-300 text-sm leading-relaxed">Sistem eskalasi transparan bagi praktisi berdedikasi tinggi untuk mencapai tingkat pengajar utama.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </div>
+        </div>
+    </section>
 
-    <!-- Galeri -->
-    <section id="galeri" class="py-32 bg-slate-800/30 border-y border-white/5 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal text-center mb-16">
-                <p class="text-teal-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Dokumentasi</p>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Momen Kesadaran</h2>
-                <p class="text-slate-300 max-w-2xl mx-auto text-base">Suasana kegiatan kelas spiritual, sesi penyelarasan, dan pembersihan energi bersama.</p>
-            </div>
+    <!-- Fasilitas & Syarat Mutlak -->
+    <section id="fasilitas" class="py-24 sm:py-28 relative bg-slate-925/70 border-y border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Syarat Mutlak Box -->
+                <div class="reveal lg:col-span-6 order-2 lg:order-1">
+                    <div class="glass-card p-8 sm:p-12 rounded-3xl relative overflow-hidden border border-amber-500/20">
+                        <div class="absolute -right-8 -bottom-8 opacity-[0.04] pointer-events-none">
+                            <i class="fa-solid fa-scale-balanced text-[14rem]"></i>
+                        </div>
+                        
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 mb-6">
+                            <i class="fa-solid fa-circle-exclamation text-amber-400 text-xs"></i>
+                            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-300">Komitmen Calon Praktisi</span>
+                        </div>
 
-            <!-- Image Slider -->
-            <div class="reveal slider-container shadow-2xl border border-white/10 relative group">
-                <div class="slides" id="slider">
-                    <!-- Slide 1 -->
-                    <div class="slide">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent z-10"></div>
-                        <img src="https://www.dropbox.com/scl/fi/6j2kzfy3jmqtg4m605hqc/FB_IMG_1755577268196.jpg?rlkey=sd18vsnnasckyggpaq1xpa51t&st=wfqtinx6&raw=1" alt="Meditasi Bersama">
-                        <div class="absolute bottom-12 left-10 md:left-12 z-20">
-                            <h3 class="text-white font-serif text-3xl font-bold mb-2">Belajar Bersama Dan Sesi Diskusi</h3>
-                            <p class="text-teal-300 text-sm tracking-wide">Sesi Zoom Rutin Mingguan</p>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="slide">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent z-10"></div>
-                        <img src="https://www.dropbox.com/scl/fi/n01pu9s3ropfn4akq3lwq/FB_IMG_1755507226204.jpg?rlkey=34uque5evelk4qj17p1ugyvne&st=0e1jay2w&raw=1" alt="Praktek Energi">
-                        <div class="absolute bottom-12 left-10 md:left-12 z-20">
-                            <h3 class="text-white font-serif text-3xl font-bold mb-2">Meditasi Bersama</h3>
-                            <p class="text-teal-300 text-sm tracking-wide">Penerapan Reiki pada diri sendiri</p>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="slide">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent z-10"></div>
-                        <img src="https://www.dropbox.com/scl/fi/9jfucfcea5n26focmzcri/IMG-20230501-WA0009.jpg?rlkey=tu3i598tcwsb79mi6infnhvxe&st=scnxoi71&raw=1" alt="Keseimbangan Cakra">
-                        <div class="absolute bottom-12 left-10 md:left-12 z-20">
-                            <h3 class="text-white font-serif text-3xl font-bold mb-2">Kopdar Akbar LHI Nusantara</h3>
-                            <p class="text-teal-300 text-sm tracking-wide">Silahturahmi dan Mengenal Jati Diri</p>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="slide">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent z-10"></div>
-                        <img src="https://www.dropbox.com/scl/fi/thvo7qqg5kd0rz364jo8y/FB_IMG_1755577344404.jpg?rlkey=jdhd9c17it7m2k53h64balftm&st=alyj5mmp&raw=1" alt="Koneksi Kosmik">
-                        <div class="absolute bottom-12 left-10 md:left-12 z-20">
-                            <h3 class="text-white font-serif text-3xl font-bold mb-2">Seni Fortex</h3>
-                            <p class="text-teal-300 text-sm tracking-wide">Penyaluran Vibrasi Positif</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Controls -->
-                <button id="slider-prev" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass-premium border border-white/20 hover:bg-white hover:text-slate-900 text-white transition-all flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 duration-300">
-                    <i class="fa-solid fa-chevron-left text-lg"></i>
-                </button>
-                <button id="slider-next" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass-premium border border-white/20 hover:bg-white hover:text-slate-900 text-white transition-all flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 duration-300">
-                    <i class="fa-solid fa-chevron-right text-lg"></i>
-                </button>
-            </div>
-        </div>
-    </section>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">Syarat Mutlak Pembelajaran</h2>
+                        <p class="text-slate-300 mb-8 text-sm leading-relaxed">
+                            Meskipun program ini sepenuhnya gratis tanpa biaya apa pun, kami menerapkan seleksi komitmen dan kedisiplinan yang tegas demi menjaga kehormatan serta kemurnian keilmuan.
+                        </p>
+                        
+                        <div class="space-y-4 relative z-10">
+                            <div class="bg-slate-900/75 p-5 sm:p-6 rounded-2xl border border-white/10">
+                                <h4 class="text-white font-bold mb-2 text-sm flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-300 shrink-0">
+                                        <i class="fa-solid fa-hands-praying text-sm"></i>
+                                    </span>
+                                    <span>1. Menjaga Adab & Etika Luhur</span>
+                                </h4>
+                                <p class="text-slate-300 text-xs leading-relaxed pl-11">
+                                    Menjunjung tinggi kesopanan, saling menghargai sesama praktisi, serta menghormati Master pengajar di setiap ruang diskusi grup maupun sesi tatap muka.
+                                </p>
+                            </div>
 
-    <!-- Testimoni / Kutipan Praktisi -->
-    <section class="py-32 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="reveal text-center mb-24">
-                <p class="text-teal-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Pengalaman Nyata</p>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Suara Hati Praktisi</h2>
-            </div>
+                            <div class="bg-slate-900/75 p-5 sm:p-6 rounded-2xl border border-white/10">
+                                <h4 class="text-white font-bold mb-2 text-sm flex items-center gap-3">
+                                    <span class="w-8 h-8 rounded-lg bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-300 shrink-0">
+                                        <i class="fa-solid fa-clipboard-check text-sm"></i>
+                                    </span>
+                                    <span>2. Disiplin & Tanggung Jawab Praktik</span>
+                                </h4>
+                                <p class="text-slate-300 text-xs leading-relaxed pl-11">
+                                    Bersedia mengikuti arahan pembelajaran harian, melaporkan tugas praktik tepat waktu, dan berkomitmen tulus terhadap pertumbuhan spiritual pribadi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testi 1 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] relative hover-lift flex flex-col">
-                    <i class="fa-solid fa-quote-right text-5xl text-white/5 absolute top-10 right-10"></i>
-                    <p class="text-slate-300 text-sm italic leading-relaxed mb-10 relative z-10 flex-grow">
-                        "Ketenangan batin yang saya cari akhirnya terwujud. Insomnia bertahun-tahun sembuh alami, dan emosi jauh lebih stabil. Bimbingan para Master sangat tulus walau 100% gratis."
-                    </p>
-                    <div class="flex items-center pt-6 border-t border-white/5 mt-auto">
-                        <div>
-                            <h4 class="text-white font-bold text-sm tracking-wide">Ahmad S.</h4>
-                            <p class="text-[10px] text-teal-400 font-medium tracking-wider uppercase mt-1">Praktisi Gel. 35</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Benefit Eksklusif -->
+                <div class="reveal lg:col-span-6 order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-4">
+                        <i class="fa-solid fa-award text-teal-400 text-xs"></i>
+                        <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Benefit Eksklusif</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-10 leading-tight">
+                        Fasilitas Penuh <br><span class="text-gradient-teal">Praktisi LHI</span>
+                    </h2>
+                    
+                    <div class="space-y-7">
+                        <div class="flex items-start gap-5 group">
+                            <div class="w-13 h-13 w-12 h-12 rounded-2xl glass-card flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition shrink-0 shadow-lg">
+                                <i class="fa-solid fa-infinity text-teal-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1.5">Bimbingan Seumur Hidup</h4>
+                                <p class="text-slate-300 text-sm leading-relaxed">Akses pendampingan dan konsultasi tanpa batas waktu melalui grup WhatsApp komunitas dan pertemuan Zoom rutin.</p>
+                            </div>
+                        </div>
 
-                <!-- Testi 2 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] relative hover-lift flex flex-col delay-100" style="transition-delay: 100ms;">
-                    <i class="fa-solid fa-quote-right text-5xl text-white/5 absolute top-10 right-10"></i>
-                    <p class="text-slate-300 text-sm italic leading-relaxed mb-10 relative z-10 flex-grow">
-                        "Struktur pembelajarannya sangat rapi dan eksklusif. Di sini, adab dan kedisiplinan dijunjung amat tinggi sehingga energi yang terbentuk dalam komunitas sangat murni."
-                    </p>
-                    <div class="flex items-center pt-6 border-t border-white/5 mt-auto">
-                        <div>
-                            <h4 class="text-white font-bold text-sm tracking-wide">Rina M.</h4>
-                            <p class="text-[10px] text-teal-400 font-medium tracking-wider uppercase mt-1">Praktisi Gel. 38</p>
-                        </div>
-                    </div>
-                </div>
+                        <div class="flex items-start gap-5 group">
+                            <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition shrink-0 shadow-lg">
+                                <i class="fa-solid fa-water text-teal-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1.5">Sesi Pemurnian Energi Berkala</h4>
+                                <p class="text-slate-300 text-sm leading-relaxed">Program pembersihan selubung aura, cakra, dan pelepasan energi negatif rutin yang dipandu langsung oleh para Master.</p>
+                            </div>
+                        </div>
 
-                <!-- Testi 3 -->
-                <div class="reveal glass-premium p-10 rounded-[2rem] relative hover-lift flex flex-col delay-200" style="transition-delay: 200ms;">
-                    <i class="fa-solid fa-quote-right text-5xl text-white/5 absolute top-10 right-10"></i>
-                    <p class="text-slate-300 text-sm italic leading-relaxed mb-10 relative z-10 flex-grow">
-                        "Memulai dari level dasar hingga kini diberi amanah memegang level Master Teacher. Kekeluargaan di LHI benar-benar berbasis cinta kasih kosmik tanpa tendensi apapun."
-                    </p>
-                    <div class="flex items-center pt-6 border-t border-white/5 mt-auto">
-                        <div>
-                            <h4 class="text-white font-bold text-sm tracking-wide">Vicki.</h4>
-                            <p class="text-[10px] text-teal-400 font-medium tracking-wider uppercase mt-1">Master Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div class="flex items-start gap-5 group">
+                            <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center border border-white/10 group-hover:border-teal-400/50 transition shrink-0 shadow-lg">
+                                <i class="fa-solid fa-graduation-cap text-teal-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1.5">Jalur Kaderisasi Master Teacher</h4>
+                                <p class="text-slate-300 text-sm leading-relaxed">Sistem eskalasi yang transparan dan terukur bagi praktisi berdedikasi tinggi untuk mencapai tingkat pengajar utama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Formulir Pendaftaran & Timer -->
-    <section id="pendaftaran" class="py-32 relative">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2090&auto=format&fit=crop')] bg-fixed bg-cover opacity-[0.05] mix-blend-screen"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800/80 to-slate-900"></div>
-        </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            
-            <!-- Widget Timer Hitung Mundur -->
-            <div class="reveal glass-premium p-8 rounded-[2.5rem] border border-teal-400/20 shadow-[0_20px_50px_rgba(45,212,191,0.1)] mb-12 relative overflow-hidden bg-slate-900/70 backdrop-blur-3xl">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-teal-400/50 to-transparent"></div>
-                <div class="relative z-10 flex flex-col items-center">
-                    
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 mb-6">
-                        <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-                        </span>
-                        <span class="text-[10px] font-bold tracking-widest uppercase text-amber-300">Waktu Pendaftaran Tersisa</span>
-                    </div>
-                    
-                    <div class="flex justify-center gap-4 md:gap-8 text-center" id="countdown-display">
-                        <div class="flex flex-col items-center min-w-[60px] md:min-w-[80px]">
-                            <span class="text-4xl md:text-6xl font-serif font-bold text-white tabular-nums drop-shadow-lg" id="cd-days">00</span>
-                            <span class="text-[9px] md:text-xs text-slate-400 uppercase tracking-[0.2em] mt-3 font-semibold">Hari</span>
-                        </div>
-                        <span class="text-3xl md:text-5xl font-serif font-light text-white/20 mt-1">:</span>
-                        <div class="flex flex-col items-center min-w-[60px] md:min-w-[80px]">
-                            <span class="text-4xl md:text-6xl font-serif font-bold text-white tabular-nums drop-shadow-lg" id="cd-hours">00</span>
-                            <span class="text-[9px] md:text-xs text-slate-400 uppercase tracking-[0.2em] mt-3 font-semibold">Jam</span>
-                        </div>
-                        <span class="text-3xl md:text-5xl font-serif font-light text-white/20 mt-1">:</span>
-                        <div class="flex flex-col items-center min-w-[60px] md:min-w-[80px]">
-                            <span class="text-4xl md:text-6xl font-serif font-bold text-white tabular-nums drop-shadow-lg" id="cd-minutes">00</span>
-                            <span class="text-[9px] md:text-xs text-slate-400 uppercase tracking-[0.2em] mt-3 font-semibold">Menit</span>
-                        </div>
-                        <span class="text-3xl md:text-5xl font-serif font-light text-white/20 mt-1">:</span>
-                        <div class="flex flex-col items-center min-w-[60px] md:min-w-[80px]">
-                            <span class="text-4xl md:text-6xl font-serif font-bold text-teal-400 tabular-nums drop-shadow-[0_0_15px_rgba(45,212,191,0.5)]" id="cd-seconds">00</span>
-                            <span class="text-[9px] md:text-xs text-teal-400 uppercase tracking-[0.2em] mt-3 font-bold">Detik</span>
-                        </div>
-                    </div>
-                    <!-- Animasi batas waktu pendaftaran (Merah berdenyut) DIUPDATE -->
-                    <p class="text-center text-sm font-bold text-red-500 mt-8 tracking-[0.2em] animate-pulse drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]">BATAS: HINGGA 14 SEPTEMBER 2026</p>
-                </div>
-            </div>
+    <!-- Galeri Dokumentasi -->
+    <section id="galeri" class="py-24 sm:py-28 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal text-center max-w-2xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-4">
+                    <i class="fa-solid fa-camera-retro text-teal-400 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Dokumentasi Komunitas</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mb-4">Momen Kesadaran</h2>
+                <p class="text-slate-300 text-sm sm:text-base">Suasana kegiatan kelas spiritual, sesi penyelarasan energi, serta silaturahmi akbar praktisi Lentera Hati Indonesia.</p>
+            </div>
 
-            <!-- Form Pendaftaran -->
-            <div class="reveal glass-premium p-8 md:p-14 rounded-[3rem] shadow-2xl relative border border-white/5">
-                
-                <div class="text-center mb-12">
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-3">Formulir Gelombang 43</h2>
-                    <p class="text-slate-400 text-sm">Lengkapi data untuk memulai perjalanan Anda.</p>
-                </div>
+            <!-- Image Slider Container -->
+            <div class="reveal relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900">
+                <div class="flex transition-transform duration-700 ease-out" id="slider">
+                    <!-- Slide 1 -->
+                    <div class="min-w-full h-[380px] sm:h-[480px] relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent z-10"></div>
+                        <img src="https://www.dropbox.com/scl/fi/6j2kzfy3jmqtg4m605hqc/FB_IMG_1755577268196.jpg?rlkey=sd18vsnnasckyggpaq1xpa51t&st=wfqtinx6&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1200&auto=format&fit=crop'"
+                             alt="Belajar Bersama Dan Sesi Diskusi" class="w-full h-full object-cover">
+                        <div class="absolute bottom-10 left-6 sm:left-10 right-6 z-20">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 border border-teal-400/30 mb-2">Daring Interaktif</span>
+                            <h3 class="text-white font-serif text-2xl sm:text-3xl font-bold">Belajar Bersama & Sesi Diskusi</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm mt-1">Pertemuan Zoom rutin mingguan bersama para Master & praktisi lintas gelombang.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="min-w-full h-[380px] sm:h-[480px] relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent z-10"></div>
+                        <img src="https://www.dropbox.com/scl/fi/n01pu9s3ropfn4akq3lwq/FB_IMG_1755507226204.jpg?rlkey=34uque5evelk4qj17p1ugyvne&st=0e1jay2w&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop'"
+                             alt="Meditasi Bersama" class="w-full h-full object-cover">
+                        <div class="absolute bottom-10 left-6 sm:left-10 right-6 z-20">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 border border-teal-400/30 mb-2">Praktik Mandiri & Terpadu</span>
+                            <h3 class="text-white font-serif text-2xl sm:text-3xl font-bold">Meditasi & Self-Healing</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm mt-1">Penerapan penyaluran energi Reiki untuk keselarasan diri sendiri.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="min-w-full h-[380px] sm:h-[480px] relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent z-10"></div>
+                        <img src="https://www.dropbox.com/scl/fi/9jfucfcea5n26focmzcri/IMG-20230501-WA0009.jpg?rlkey=tu3i598tcwsb79mi6infnhvxe&st=scnxoi71&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop'"
+                             alt="Kopdar Akbar LHI Nusantara" class="w-full h-full object-cover">
+                        <div class="absolute bottom-10 left-6 sm:left-10 right-6 z-20">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 border border-teal-400/30 mb-2">Persaudaraan Nusantara</span>
+                            <h3 class="text-white font-serif text-2xl sm:text-3xl font-bold">Kopdar Akbar LHI Nusantara</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm mt-1">Silaturahmi hangat dan pengenalan jati diri antar keluarga besar Lentera Hati Indonesia.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="min-w-full h-[380px] sm:h-[480px] relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent z-10"></div>
+                        <img src="https://www.dropbox.com/scl/fi/thvo7qqg5kd0rz364jo8y/FB_IMG_1755577344404.jpg?rlkey=jdhd9c17it7m2k53h64balftm&st=alyj5mmp&raw=1" 
+                             onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop'"
+                             alt="Seni Vortex" class="w-full h-full object-cover">
+                        <div class="absolute bottom-10 left-6 sm:left-10 right-6 z-20">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-teal-400/20 text-teal-300 border border-teal-400/30 mb-2">Harmoni Semesta</span>
+                            <h3 class="text-white font-serif text-2xl sm:text-3xl font-bold">Penyaluran Vibrasi Positif</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm mt-1">Mengalirkan energi cinta kasih untuk ketenangan lingkungan dan sesama.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons (Accessible on both mobile & desktop) -->
+                <button id="slider-prev" aria-label="Slide Sebelumnya" class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full glass-nav border border-white/20 hover:bg-teal-400 hover:text-slate-950 text-white transition-all flex items-center justify-center z-30 shadow-lg">
+                    <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+                <button id="slider-next" aria-label="Slide Berikutnya" class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full glass-nav border border-white/20 hover:bg-teal-400 hover:text-slate-950 text-white transition-all flex items-center justify-center z-30 shadow-lg">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
 
-                <form id="waForm" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="relative group">
-                            <label for="nama" class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-2 ml-2">Nama Lengkap</label>
-                            <input type="text" id="nama" required 
-                                class="w-full input-premium rounded-2xl px-5 py-4 text-white text-sm placeholder-white/30" 
-                                placeholder="Sesuai identitas asli">
-                        </div>
-                        <div class="relative group">
-                            <label for="usia" class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-2 ml-2">Usia</label>
-                            <input type="number" id="usia" required 
-                                class="w-full input-premium rounded-2xl px-5 py-4 text-white text-sm placeholder-white/30" 
-                                placeholder="Angka (Contoh: 28)">
-                        </div>
-                    </div>
+                <!-- Slide Indicators -->
+                <div class="absolute bottom-4 right-6 z-30 flex items-center gap-2" id="slider-dots">
+                    <button type="button" data-slide="0" class="slider-dot w-6 h-1.5 rounded-full bg-teal-400 transition-all" aria-label="Slide 1"></button>
+                    <button type="button" data-slide="1" class="slider-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all" aria-label="Slide 2"></button>
+                    <button type="button" data-slide="2" class="slider-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all" aria-label="Slide 3"></button>
+                    <button type="button" data-slide="3" class="slider-dot w-2 h-1.5 rounded-full bg-white/30 hover:bg-white/60 transition-all" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="relative group">
-                        <label for="domisili" class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-2 ml-2">Kota Domisili</label>
-                        <input type="text" id="domisili" required 
-                            class="w-full input-premium rounded-2xl px-5 py-4 text-white text-sm placeholder-white/30" 
-                            placeholder="Domisili saat ini">
-                    </div>
+    <!-- Testimoni / Suara Hati Praktisi -->
+    <section class="py-24 relative bg-slate-925/60 border-t border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="reveal text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-4">
+                    <i class="fa-solid fa-comment-dots text-teal-400 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-teal-300">Kisah Transformasi</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Suara Hati Praktisi</h2>
+            </div>
 
-                    <!-- TAMBAHAN: Opsi sudah pernah daftar atau belum -->
-                    <div class="relative group">
-                        <label class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-3 ml-2">Sudah pernah daftar Reiki Lentera Hati sebelumnya?</label>
-                        <div class="flex items-center gap-6 bg-white/5 p-4 rounded-2xl border border-white/5 hover:border-white/10 transition">
-                            <label class="flex items-center cursor-pointer group/radio">
-                                <input type="radio" name="pernah_daftar" value="Sudah" required class="w-5 h-5 rounded-full border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-900 cursor-pointer accent-teal-400">
-                                <span class="ml-3 text-sm font-medium text-slate-300 group-hover/radio:text-white transition-colors">Sudah</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer group/radio">
-                                <input type="radio" name="pernah_daftar" value="Belum" required class="w-5 h-5 rounded-full border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-900 cursor-pointer accent-teal-400">
-                                <span class="ml-3 text-sm font-medium text-slate-300 group-hover/radio:text-white transition-colors">Belum</span>
-                            </label>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <!-- Testi 1 -->
+                <div class="reveal glass-card p-8 sm:p-9 rounded-3xl relative card-interactive flex flex-col">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 flex-grow">
+                        "Ketenangan batin yang saya cari akhirnya terwujud. Insomnia bertahun-tahun berangsur pulih secara alami, dan emosi jauh lebih terkendali. Bimbingan para Master sangat tulus walau 100% gratis."
+                    </p>
+                    <div class="flex items-center gap-3.5 pt-5 border-t border-white/10 mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-400/30 flex items-center justify-center text-teal-300 font-serif font-bold text-sm">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Ahmad S.</h4>
+                            <p class="text-[11px] text-teal-400 font-semibold tracking-wider uppercase">Praktisi Alumni Gel. 35</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="relative group">
-                        <label for="alasan" class="block text-xs font-bold text-slate-400 tracking-wider uppercase mb-2 ml-2">Motivasi Belajar</label>
-                        <textarea id="alasan" required rows="3" 
-                            class="w-full input-premium rounded-2xl px-5 py-4 text-white text-sm placeholder-white/30 resize-none" 
-                            placeholder="Ceritakan singkat tujuan mulia Anda bergabung..."></textarea>
-                    </div>
+                <!-- Testi 2 -->
+                <div class="reveal glass-card p-8 sm:p-9 rounded-3xl relative card-interactive flex flex-col">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 flex-grow">
+                        "Struktur pembelajarannya sangat rapi dan tertib. Di sini, adab dan kedisiplinan dijunjung amat tinggi sehingga vibrasi energi yang terbentuk di dalam ruang belajar terasa begitu teduh dan murni."
+                    </p>
+                    <div class="flex items-center gap-3.5 pt-5 border-t border-white/10 mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-400/30 flex items-center justify-center text-teal-300 font-serif font-bold text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Rina M.</h4>
+                            <p class="text-[11px] text-teal-400 font-semibold tracking-wider uppercase">Praktisi Alumni Gel. 38</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <label class="flex items-start mt-8 bg-white/5 p-5 rounded-2xl border border-white/5 hover:border-white/10 transition cursor-pointer group">
-                        <div class="flex items-center h-6 mt-0.5">
-                            <input id="persetujuan" type="checkbox" required class="w-5 h-5 rounded border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-900 cursor-pointer accent-teal-400">
-                        </div>
-                        <div class="ml-4 text-xs md:text-sm">
-                            <span class="font-medium text-slate-300 leading-relaxed cursor-pointer select-none">
-                                Saya bersedia mematuhi <span class="text-white font-bold">Syarat Adab dan Kedisiplinan</span> yang ditetapkan oleh Lentera Hati Indonesia.
-                            </span>
-                        </div>
-                    </label>
+                <!-- Testi 3 -->
+                <div class="reveal glass-card p-8 sm:p-9 rounded-3xl relative card-interactive flex flex-col">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8 flex-grow">
+                        "Memulai dari nol di tingkat dasar hingga kini diberi amanah di tingkat Master Teacher. Kekeluargaan di LHI benar-benar berlandaskan ketulusan cinta kasih tanpa pamrih."
+                    </p>
+                    <div class="flex items-center gap-3.5 pt-5 border-t border-white/10 mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-300 font-serif font-bold text-sm">
+                            VK
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Vicki</h4>
+                            <p class="text-[11px] text-amber-400 font-semibold tracking-wider uppercase">Master Teacher LHI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="pt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- Tombol Admin 1 -->
-                        <button type="button" data-admin="6282231691821" class="wa-submit-btn w-full bg-slate-100 text-slate-900 hover:bg-teal-50 font-bold text-xs md:text-sm tracking-wide uppercase py-4 rounded-2xl shadow-[0_10px_30px_rgba(255,255,255,0.1)] hover:shadow-[0_15px_40px_rgba(45,212,191,0.25)] transition-all duration-300 transform hover:-translate-y-1 flex justify-center items-center group">
-                            <i class="fa-brands fa-whatsapp text-2xl mr-3 text-green-600 group-hover:scale-110 transition-transform"></i> 
-                            Kirim ke Master Terru
-                        </button>
-                        <!-- Tombol Admin 2 -->
-                        <button type="button" data-admin="6288221544982" class="wa-submit-btn w-full bg-slate-100 text-slate-900 hover:bg-teal-50 font-bold text-xs md:text-sm tracking-wide uppercase py-4 rounded-2xl shadow-[0_10px_30px_rgba(255,255,255,0.1)] hover:shadow-[0_15px_40px_rgba(45,212,191,0.25)] transition-all duration-300 transform hover:-translate-y-1 flex justify-center items-center group">
-                            <i class="fa-brands fa-whatsapp text-2xl mr-3 text-green-600 group-hover:scale-110 transition-transform"></i> 
-                            Kirim ke Master Jois
-                        </button>
-                    </div>
-                </form>
-            </div>
-            
-            <p class="text-center text-[10px] uppercase tracking-widest text-slate-500 mt-10 font-medium">
-                Sistem Terenkripsi • Terhubung ke Admin Resmi
-            </p>
-        </div>
-    </section>
+    <!-- Formulir Pendaftaran & Timer Gelombang 44 -->
+    <section id="pendaftaran" class="py-24 sm:py-32 relative overflow-hidden">
+        <!-- Ambient Background -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-teal-500/10 rounded-full blur-[130px]"></div>
+        </div>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 py-16 border-t border-white/5 relative z-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-full overflow-hidden border border-white/10 shadow-[0_0_20px_rgba(45,212,191,0.15)] flex items-center justify-center mb-6 bg-slate-900">
-                <img src="https://www.dropbox.com/scl/fi/2duzawsa67xupr0gpm6z3/Desain-tanpa-judul_20250822_195111_0000.png?rlkey=i3ywyoppf6u0rejgozsounirw&st=1cok6h42&raw=1" alt="Logo LHI" class="w-full h-full object-cover">
-            </div>
-            <p class="text-white font-serif font-bold text-xl tracking-widest mb-2">LENTERA HATI INDONESIA</p>
-            <p class="text-slate-400 text-sm mb-10 font-light">Pusat Pembelajaran Reiki Terstruktur & Gratis</p>
-            
-            <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent mb-10"></div>
-            
-            <p class="text-slate-500 text-[10px] tracking-[0.2em] font-semibold uppercase leading-loose">
-                &copy; 2026 LENTERA HATI INDONESIA. HAK CIPTA DILINDUNGI SEMESTA. <br>
-                <span class="text-slate-400">CAHAYA • CINTA • KASIH</span>
-            </p>
-        </div>
-    </footer>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            
+            <!-- Widget Timer Hitung Mundur Gelombang 44 -->
+            <div class="reveal glass-card p-7 sm:p-10 rounded-3xl border border-teal-400/30 shadow-[0_20px_60px_rgba(45,212,191,0.12)] mb-10 relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-teal-400 to-transparent"></div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+                        </span>
+                        <span class="text-[11px] font-bold tracking-[0.18em] uppercase text-amber-300">Hitung Mundur Penutupan Gelombang 44</span>
+                    </div>
+                    
+                    <!-- Countdown Boxes -->
+                    <div class="grid grid-cols-4 gap-3 sm:gap-6 w-full max-w-xl" id="countdown-display">
+                        <div class="bg-slate-900/90 border border-white/10 rounded-2xl p-3 sm:p-5 flex flex-col items-center justify-center shadow-inner">
+                            <span class="text-3xl sm:text-5xl font-serif font-bold text-white tabular-nums" id="cd-days">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1.5 font-semibold">Hari</span>
+                        </div>
+                        <div class="bg-slate-900/90 border border-white/10 rounded-2xl p-3 sm:p-5 flex flex-col items-center justify-center shadow-inner">
+                            <span class="text-3xl sm:text-5xl font-serif font-bold text-white tabular-nums" id="cd-hours">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1.5 font-semibold">Jam</span>
+                        </div>
+                        <div class="bg-slate-900/90 border border-white/10 rounded-2xl p-3 sm:p-5 flex flex-col items-center justify-center shadow-inner">
+                            <span class="text-3xl sm:text-5xl font-serif font-bold text-white tabular-nums" id="cd-minutes">00</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1.5 font-semibold">Menit</span>
+                        </div>
+                        <div class="bg-slate-900/90 border border-teal-500/30 rounded-2xl p-3 sm:p-5 flex flex-col items-center justify-center shadow-[0_0_20px_rgba(45,212,191,0.15)]">
+                            <span class="text-3xl sm:text-5xl font-serif font-bold text-teal-400 tabular-nums" id="cd-seconds">00</span>
+                            <span class="text-[10px] sm:text-xs text-teal-300 uppercase tracking-widest mt-1.5 font-bold">Detik</span>
+                        </div>
+                    </div>
 
-    <!-- Professional Vanilla JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            // 1. Navbar Scroll Effect
-            const navbar = document.getElementById('nav-container');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('bg-slate-900/95', 'backdrop-blur-3xl', 'border-white/5');
-                    navbar.classList.remove('glass-nav', 'border-transparent');
-                } else {
-                    navbar.classList.add('glass-nav', 'border-transparent');
-                    navbar.classList.remove('bg-slate-900/95', 'backdrop-blur-3xl', 'border-white/5');
-                }
-            });
+                    <!-- Deadline Info Pill -->
+                    <div class="mt-6 inline-flex items-center gap-2.5 px-5 py-2 rounded-xl bg-red-500/10 border border-red-500/25">
+                        <i class="fa-regular fa-calendar-check text-red-400 text-xs"></i>
+                        <p class="text-xs sm:text-sm font-bold text-red-300 tracking-[0.15em] uppercase">
+                            Batas Pendaftaran: <span class="text-white">27 Oktober 2026</span> (23:59 WIB)
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-            // 2. Mobile Menu Toggle
-            const btnMenu = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-            
-            if(btnMenu && menu) {
-                btnMenu.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
-                });
-                
-                // Tutup menu saat link diklik
-                document.querySelectorAll('.mobile-link').forEach(link => {
-                    link.addEventListener('click', () => menu.classList.add('hidden'));
-                });
-            }
+            <!-- Form Pendaftaran Card -->
+            <div class="reveal glass-card p-7 sm:p-12 md:p-14 rounded-3xl shadow-2xl relative border border-white/10">
+                
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-[11px] font-extrabold uppercase tracking-[0.25em] text-teal-400 block mb-2">Registrasi Resmi</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-3">Formulir Gelombang 44</h2>
+                    <p class="text-slate-300 text-sm">Lengkapi data diri Anda dengan sebenar-benarnya, lalu pilih salah satu Master Admin di bawah untuk mengirimkan pendaftaran via WhatsApp.</p>
+                </div>
 
-            // 3. Scroll Reveal Animation via Intersection Observer
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-            
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+                <!-- Validation Notification Box (Hidden by default) -->
+                <div id="form-alert" class="hidden mb-6 p-4 rounded-2xl bg-red-500/15 border border-red-500/40 text-red-200 text-xs sm:text-sm flex items-center gap-3">
+                    <i class="fa-solid fa-triangle-exclamation text-red-400 text-base shrink-0"></i>
+                    <span id="form-alert-text">Mohon lengkapi seluruh kolom formulir terlebih dahulu.</span>
+                </div>
 
-            // 4. Slider Gallery Logic
-            const slidesContainer = document.getElementById('slider');
-            const btnPrev = document.getElementById('slider-prev');
-            const btnNext = document.getElementById('slider-next');
-            
-            if(slidesContainer) {
-                const totalSlides = slidesContainer.children.length;
-                let slideIndex = 0;
+                <form id="waForm" class="space-y-6" novalidate>
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
+                        <!-- Nama Lengkap -->
+                        <div class="sm:col-span-8">
+                            <label for="nama" class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">
+                                Nama Lengkap <span class="text-teal-400">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500 pointer-events-none">
+                                    <i class="fa-regular fa-user text-sm"></i>
+                                </span>
+                                <input type="text" id="nama" required 
+                                    class="w-full input-luxury rounded-xl pl-11 pr-4 py-3.5 text-sm placeholder-slate-500" 
+                                    placeholder="Masukkan nama sesuai identitas asli">
+                            </div>
+                        </div>
 
-                const moveSlide = (step) => {
-                    slideIndex += step;
-                    if (slideIndex >= totalSlides) slideIndex = 0;
-                    if (slideIndex < 0) slideIndex = totalSlides - 1;
-                    slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
-                };
+                        <!-- Usia -->
+                        <div class="sm:col-span-4">
+                            <label for="usia" class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">
+                                Usia (Tahun) <span class="text-teal-400">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500 pointer-events-none">
+                                    <i class="fa-solid fa-hashtag text-sm"></i>
+                                </span>
+                                <input type="number" id="usia" min="15" max="99" required 
+                                    class="w-full input-luxury rounded-xl pl-11 pr-4 py-3.5 text-sm placeholder-slate-500" 
+                                    placeholder="Contoh: 28">
+                            </div>
+                        </div>
+                    </div>
 
-                // Event Listeners for controls
-                if(btnPrev) btnPrev.addEventListener('click', () => moveSlide(-1));
-                if(btnNext) btnNext.addEventListener('click', () => moveSlide(1));
+                    <!-- Kota Domisili -->
+                    <div>
+                        <label for="domisili" class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">
+                            Kota / Kabupaten Domisili Saat Ini <span class="text-teal-400">*</span>
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500 pointer-events-none">
+                                <i class="fa-solid fa-location-dot text-sm"></i>
+                            </span>
+                            <input type="text" id="domisili" required 
+                                class="w-full input-luxury rounded-xl pl-11 pr-4 py-3.5 text-sm placeholder-slate-500" 
+                                placeholder="Contoh: Surabaya, Jawa Timur">
+                        </div>
+                    </div>
 
-                // Auto-play
-                setInterval(() => moveSlide(1), 6000); 
-            }
+                    <!-- Riwayat Pendaftaran -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2.5">
+                            Apakah Anda sudah pernah mendaftar di Lentera Hati Indonesia sebelumnya? <span class="text-teal-400">*</span>
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <label class="radio-card cursor-pointer block">
+                                <input type="radio" name="pernah_daftar" value="Belum Pernah (Peserta Baru)" required class="sr-only" checked>
+                                <div class="p-4 rounded-xl border border-white/10 bg-slate-900/60 hover:border-white/25 transition-all flex items-center gap-3.5">
+                                    <span class="radio-dot w-5 h-5 rounded-full border-2 border-slate-500 flex-shrink-0 transition-all"></span>
+                                    <div>
+                                        <span class="block text-sm font-bold text-white">Belum Pernah</span>
+                                        <span class="block text-[11px] text-slate-400">Saya pendaftar baru di Gelombang 44</span>
+                                    </div>
+                                </div>
+                            </label>
 
-            // 5. Countdown Timer Logic (UPDATE ke 14 September 2026)
-            const targetDate = new Date("September 14, 2026 23:59:59").getTime();
-            const displayContainer = document.getElementById('countdown-display');
-            const elDays = document.getElementById("cd-days");
-            const elHours = document.getElementById("cd-hours");
-            const elMinutes = document.getElementById("cd-minutes");
-            const elSeconds = document.getElementById("cd-seconds");
+                            <label class="radio-card cursor-pointer block">
+                                <input type="radio" name="pernah_daftar" value="Sudah Pernah Daftar Sebelumnya" required class="sr-only">
+                                <div class="p-4 rounded-xl border border-white/10 bg-slate-900/60 hover:border-white/25 transition-all flex items-center gap-3.5">
+                                    <span class="radio-dot w-5 h-5 rounded-full border-2 border-slate-500 flex-shrink-0 transition-all"></span>
+                                    <div>
+                                        <span class="block text-sm font-bold text-white">Sudah Pernah</span>
+                                        <span class="block text-[11px] text-slate-400">Pernah mengikuti gelombang sebelumnya</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
 
-            if(displayContainer && elDays && elHours && elMinutes && elSeconds) {
-                const countdownInterval = setInterval(() => {
-                    const now = new Date().getTime();
-                    const distance = targetDate - now;
+                    <!-- Motivasi Belajar -->
+                    <div>
+                        <label for="alasan" class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">
+                            Motivasi & Tujuan Mengikuti Pembelajaran <span class="text-teal-400">*</span>
+                        </label>
+                        <textarea id="alasan" required rows="3" 
+                            class="w-full input-luxury rounded-xl px-4 py-3.5 text-sm placeholder-slate-500 resize-none" 
+                            placeholder="Tuliskan secara singkat tujuan mulia Anda bergabung di Gelombang 44..."></textarea>
+                    </div>
 
-                    if (distance < 0) {
-                        clearInterval(countdownInterval);
-                        displayContainer.innerHTML = "<div class='text-2xl font-bold text-amber-400 my-4 tracking-widest col-span-full'>WAKTU PENDAFTARAN TELAH HABIS</div>";
-                        return;
-                    }
+                    <!-- Pakta Integritas Checkbox -->
+                    <label class="flex items-start bg-slate-900/80 p-4 sm:p-5 rounded-2xl border border-white/10 hover:border-teal-400/40 transition cursor-pointer select-none">
+                        <div class="flex items-center h-6 mt-0.5">
+                            <input id="persetujuan" type="checkbox" required class="w-5 h-5 rounded border-white/20 text-teal-400 focus:ring-teal-400 bg-slate-950 cursor-pointer accent-teal-400">
+                        </div>
+                        <div class="ml-3.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Saya menyatakan dengan tulus bersedia mematuhi seluruh <strong class="text-white">Syarat Adab, Etika, dan Kedisiplinan</strong> yang ditetapkan oleh Lentera Hati Indonesia selama masa pembelajaran.
+                        </div>
+                    </label>
 
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    <!-- Dual Admin WhatsApp Buttons -->
+                    <div class="pt-4">
+                        <p class="text-center text-xs text-slate-400 mb-4 font-medium">
+                            Pilih <strong class="text-white">salah satu</strong> Master Admin di bawah ini untuk mengirim formulir pendaftaran Anda:
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Tombol Admin 1: Master Terru -->
+                            <button type="button" data-admin="6282231691821" data-admin-name="Master Terru" class="wa-submit-btn w-full bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-950 hover:from-teal-300 hover:to-emerald-300 font-extrabold text-xs sm:text-sm tracking-wider uppercase py-4 px-6 rounded-2xl shadow-[0_10px_25px_rgba(45,212,191,0.25)] hover:shadow-[0_15px_35px_rgba(45,212,191,0.4)] transition-all duration-300 transform hover:-translate-y-0.5 flex justify-center items-center gap-3 group">
+                                <i class="fa-brands fa-whatsapp text-xl text-slate-950 group-hover:scale-110 transition-transform"></i> 
+                                <span>Kirim ke Master Terru</span>
+                            </button>
 
-                    elDays.innerText = days.toString().padStart(2, '0');
-                    elHours.innerText = hours.toString().padStart(2, '0');
-                    elMinutes.innerText = minutes.toString().padStart(2, '0');
-                    elSeconds.innerText = seconds.toString().padStart(2, '0');
+                            <!-- Tombol Admin 2: Master Jois -->
+                            <button type="button" data-admin="6288221544982" data-admin-name="Master Jois" class="wa-submit-btn w-full bg-slate-100 text-slate-950 hover:bg-teal-50 font-extrabold text-xs sm:text-sm tracking-wider uppercase py-4 px-6 rounded-2xl shadow-[0_10px_25px_rgba(255,255,255,0.12)] hover:shadow-[0_15px_35px_rgba(45,212,191,0.25)] transition-all duration-300 transform hover:-translate-y-0.5 flex justify-center items-center gap-3 group">
+                                <i class="fa-brands fa-whatsapp text-xl text-emerald-600 group-hover:scale-110 transition-transform"></i> 
+                                <span>Kirim ke Master Jois</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <p class="text-center text-[11px] uppercase tracking-[0.2em] text-slate-500 mt-8 font-semibold flex items-center justify-center gap-2">
+                <i class="fa-solid fa-lock text-teal-500/70"></i>
+                <span>Privasi Data Terjaga • Terhubung Langsung ke WhatsApp Resmi</span>
+            </p>
+        </div>
+    </section>
 
-                }, 1000);
-            }
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-16 border-t border-white/10 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full overflow-hidden border border-teal-400/30 shadow-[0_0_25px_rgba(45,212,191,0.18)] flex items-center justify-center mb-5 bg-slate-900">
+                <img src="https://www.dropbox.com/scl/fi/2duzawsa67xupr0gpm6z3/Desain-tanpa-judul_20250822_195111_0000.png?rlkey=i3ywyoppf6u0rejgozsounirw&st=1cok6h42&raw=1" 
+                     onerror="this.src='https://placehold.co/100x100/0f172a/2dd4bf?text=LHI'"
+                     alt="Logo LHI" class="w-full h-full object-cover">
+            </div>
+            <p class="text-white font-serif font-bold text-lg sm:text-xl tracking-widest mb-1.5">LENTERA HATI INDONESIA</p>
+            <p class="text-slate-400 text-xs sm:text-sm mb-8 font-normal">Pusat Pembelajaran Reiki Terstruktur, Bersanad & 100% Gratis</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400 font-semibold uppercase tracking-wider mb-8">
+                <a href="#beranda" class="hover:text-teal-300 transition-colors">Beranda</a>
+                <a href="#kredibilitas" class="hover:text-teal-300 transition-colors">Esensi</a>
+                <a href="#manfaat" class="hover:text-teal-300 transition-colors">Manfaat</a>
+                <a href="#program" class="hover:text-teal-300 transition-colors">Kurikulum</a>
+                <a href="#fasilitas" class="hover:text-teal-300 transition-colors">Fasilitas</a>
+                <a href="#pendaftaran" class="hover:text-teal-300 transition-colors">Pendaftaran Gel. 44</a>
+            </div>
 
-            // 6. WhatsApp Form Submission Handler
-            const waButtons = document.querySelectorAll('.wa-submit-btn');
-            const form = document.getElementById('waForm');
+            <div class="w-32 h-[1px] bg-gradient-to-r from-transparent via-white/15 to-transparent mb-8"></div>
+            
+            <p class="text-slate-500 text-[10px] tracking-[0.22em] font-semibold uppercase leading-loose">
+                &copy; 2026 LENTERA HATI INDONESIA. HAK CIPTA DILINDUNGI SEMESTA. <br>
+                <span class="text-teal-400/80">CAHAYA • CINTA • KASIH</span>
+            </p>
+        </div>
+    </footer>
 
-            waButtons.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    // Cek validasi form bawaan HTML5 (Required fields, etc)
-                    if (!form.checkValidity()) {
-                        form.reportValidity();
-                        return;
-                    }
+    <!-- Vanilla JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Scroll to Top on Brand Logo Click
+            const btnScrollTop = document.getElementById('scroll-to-top');
+            if (btnScrollTop) {
+                btnScrollTop.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
 
-                    // Ambil nomor admin dari atribut data-admin
-                    const adminNumber = e.currentTarget.dataset.admin;
-                    
-                    // Ambil nilai input
-                    const nama = document.getElementById('nama').value.trim();
-                    const usia = document.getElementById('usia').value.trim();
-                    const domisili = document.getElementById('domisili').value.trim();
-                    
-                    // Ambil nilai radio button yang dipilih
-                    const radioPernahDaftar = document.querySelector('input[name="pernah_daftar"]:checked');
-                    const pernahDaftar = radioPernahDaftar ? radioPernahDaftar.value : 'Belum Terisi';
-                    
-                    const alasan = document.getElementById('alasan').value.trim();
-                    
-                    // Format pesan UPDATE (Tambahan Pernah Daftar & Gel 43)
-                    const textMessage = `*PENDAFTARAN LHI - GEL 43*%0A%0A🙏 Salam sejahtera Admin,%0ASaya mengajukan pendaftaran dengan data berikut:%0A%0A*Nama:* ${nama}%0A*Usia:* ${usia} Tahun%0A*Domisili:* ${domisili}%0A*Pernah Daftar LHI:* ${pernahDaftar}%0A*Motivasi:* ${alasan}%0A%0A_Saya menyatakan bersedia mematuhi Adab dan Disiplin mutlak pembelajaran di Lentera Hati Indonesia._%0A%0AMohon arahan selanjutnya. Terima kasih.`;
-                    
-                    // Buka WhatsApp di tab baru
-                    window.open(`https://wa.me/${adminNumber}?text=${textMessage}`, '_blank');
-                });
-            });
+            // 2. Navbar Scroll Styling
+            const navContainer = document.getElementById('nav-container');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    navContainer.classList.add('bg-slate-950/95', 'border-white/15', 'shadow-2xl');
+                } else {
+                    navContainer.classList.remove('bg-slate-950/95', 'border-white/15');
+                }
+            });
 
-        });
-    </script>
+            // 3. Mobile Menu Toggle
+            const btnMenu = document.getElementById('mobile-menu-btn');
+            const iconMenu = document.getElementById('mobile-menu-icon');
+            const menu = document.getElementById('mobile-menu');
+            
+            if (btnMenu && menu) {
+                btnMenu.addEventListener('click', () => {
+                    const isHidden = menu.classList.toggle('hidden');
+                    if (iconMenu) {
+                        iconMenu.className = isHidden ? 'fa-solid fa-bars text-base' : 'fa-solid fa-xmark text-lg';
+                    }
+                });
+                
+                document.querySelectorAll('.mobile-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                        if (iconMenu) iconMenu.className = 'fa-solid fa-bars text-base';
+                    });
+                });
+            }
+
+            // 4. Scroll Reveal Animation via Intersection Observer
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.12 };
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // 5. Slider Gallery Logic with Indicators & Touch Support
+            const slidesContainer = document.getElementById('slider');
+            const btnPrev = document.getElementById('slider-prev');
+            const btnNext = document.getElementById('slider-next');
+            const dots = document.querySelectorAll('.slider-dot');
+            
+            if (slidesContainer) {
+                const totalSlides = slidesContainer.children.length;
+                let slideIndex = 0;
+                let autoPlayTimer = null;
+
+                const updateDots = (index) => {
+                    dots.forEach((dot, i) => {
+                        if (i === index) {
+                            dot.classList.remove('w-2', 'bg-white/30');
+                            dot.classList.add('w-6', 'bg-teal-400');
+                        } else {
+                            dot.classList.remove('w-6', 'bg-teal-400');
+                            dot.classList.add('w-2', 'bg-white/30');
+                        }
+                    });
+                };
+
+                const goToSlide = (index) => {
+                    slideIndex = (index + totalSlides) % totalSlides;
+                    slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+                    updateDots(slideIndex);
+                };
+
+                const resetAutoPlay = () => {
+                    if (autoPlayTimer) clearInterval(autoPlayTimer);
+                    autoPlayTimer = setInterval(() => goToSlide(slideIndex + 1), 5500);
+                };
+
+                if (btnPrev) {
+                    btnPrev.addEventListener('click', () => {
+                        goToSlide(slideIndex - 1);
+                        resetAutoPlay();
+                    });
+                }
+                if (btnNext) {
+                    btnNext.addEventListener('click', () => {
+                        goToSlide(slideIndex + 1);
+                        resetAutoPlay();
+                    });
+                }
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', (e) => {
+                        const targetSlide = parseInt(e.currentTarget.dataset.slide, 10);
+                        goToSlide(targetSlide);
+                        resetAutoPlay();
+                    });
+                });
+
+                // Touch Swipe Support for Mobile
+                let touchStartX = 0;
+                slidesContainer.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                slidesContainer.addEventListener('touchend', (e) => {
+                    const touchEndX = e.changedTouches[0].screenX;
+                    if (touchStartX - touchEndX > 50) {
+                        goToSlide(slideIndex + 1);
+                        resetAutoPlay();
+                    } else if (touchEndX - touchStartX > 50) {
+                        goToSlide(slideIndex - 1);
+                        resetAutoPlay();
+                    }
+                }, { passive: true });
+
+                resetAutoPlay();
+            }
+
+            // 6. Countdown Timer Logic — Batas Pendaftaran: 27 Oktober 2026 23:59:59 WIB
+            const targetDate = new Date("2026-10-27T23:59:59+07:00").getTime();
+            const displayContainer = document.getElementById('countdown-display');
+            const elDays = document.getElementById("cd-days");
+            const elHours = document.getElementById("cd-hours");
+            const elMinutes = document.getElementById("cd-minutes");
+            const elSeconds = document.getElementById("cd-seconds");
+
+            if (displayContainer && elDays && elHours && elMinutes && elSeconds) {
+                const updateCountdown = () => {
+                    const now = new Date().getTime();
+                    const distance = targetDate - now;
+
+                    if (distance < 0) {
+                        displayContainer.innerHTML = `
+                            <div class="col-span-4 py-4 px-6 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-300 font-serif font-bold text-lg sm:text-xl tracking-widest uppercase">
+                                Pendaftaran Gelombang 44 Telah Ditutup
+                            </div>
+                        `;
+                        return false;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    elDays.innerText = days.toString().padStart(2, '0');
+                    elHours.innerText = hours.toString().padStart(2, '0');
+                    elMinutes.innerText = minutes.toString().padStart(2, '0');
+                    elSeconds.innerText = seconds.toString().padStart(2, '0');
+                    return true;
+                };
+
+                // Run immediately so there is no 1-second blank delay
+                if (updateCountdown()) {
+                    const countdownInterval = setInterval(() => {
+                        if (!updateCountdown()) clearInterval(countdownInterval);
+                    }, 1000);
+                }
+            }
+
+            // 7. WhatsApp Form Submission Handler (Gelombang 44)
+            const waButtons = document.querySelectorAll('.wa-submit-btn');
+            const form = document.getElementById('waForm');
+            const formAlert = document.getElementById('form-alert');
+            const formAlertText = document.getElementById('form-alert-text');
+
+            const showFormError = (msg) => {
+                if (formAlert && formAlertText) {
+                    formAlertText.textContent = msg;
+                    formAlert.classList.remove('hidden');
+                    formAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            };
+
+            waButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    if (formAlert) formAlert.classList.add('hidden');
+
+                    const nama = document.getElementById('nama').value.trim();
+                    const usia = document.getElementById('usia').value.trim();
+                    const domisili = document.getElementById('domisili').value.trim();
+                    const radioPernahDaftar = document.querySelector('input[name="pernah_daftar"]:checked');
+                    const alasan = document.getElementById('alasan').value.trim();
+                    const persetujuan = document.getElementById('persetujuan').checked;
+
+                    if (!nama) {
+                        showFormError('Mohon isi Nama Lengkap Anda terlebih dahulu.');
+                        document.getElementById('nama').focus();
+                        return;
+                    }
+                    if (!usia || isNaN(usia) || Number(usia) < 10) {
+                        showFormError('Mohon isi Usia Anda dengan angka yang valid.');
+                        document.getElementById('usia').focus();
+                        return;
+                    }
+                    if (!domisili) {
+                        showFormError('Mohon cantumkan Kota / Kabupaten Domisili Anda saat ini.');
+                        document.getElementById('domisili').focus();
+                        return;
+                    }
+                    if (!alasan) {
+                        showFormError('Mohon tuliskan motivasi atau tujuan Anda mengikuti pembelajaran.');
+                        document.getElementById('alasan').focus();
+                        return;
+                    }
+                    if (!persetujuan) {
+                        showFormError('Mohon centang pernyataan kesediaan mematuhi Syarat Adab dan Kedisiplinan.');
+                        document.getElementById('persetujuan').focus();
+                        return;
+                    }
+
+                    const adminNumber = e.currentTarget.dataset.admin;
+                    const adminName = e.currentTarget.dataset.adminName || 'Admin';
+                    const pernahDaftar = radioPernahDaftar ? radioPernahDaftar.value : 'Belum Pernah';
+
+                    const rawMessage = 
+`*PENDAFTARAN LHI - GELOMBANG 44*
+
+🙏 Salam sejahtera ${adminName},
+Saya mengajukan pendaftaran Kelas Reiki Lentera Hati Indonesia Gelombang 44 dengan data berikut:
+
+• *Nama Lengkap:* ${nama}
+• *Usia:* ${usia} Tahun
+• *Domisili:* ${domisili}
+• *Riwayat Daftar LHI:* ${pernahDaftar}
+• *Motivasi Belajar:* ${alasan}
+
+_Saya menyatakan bersedia mematuhi seluruh Adab, Etika, dan Disiplin mutlak pembelajaran di Lentera Hati Indonesia._
+
+Mohon arahan selanjutnya. Terima kasih. 🙏`;
+
+                    const encodedMessage = encodeURIComponent(rawMessage);
+                    window.open(`https://wa.me/${adminNumber}?text=${encodedMessage}`, '_blank');
+                });
+            });
+
+        });
+    </script>
 </body>
 </html>
